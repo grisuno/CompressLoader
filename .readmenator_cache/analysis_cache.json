@@ -1,0 +1,84 @@
+{
+  "analysis_v2": {
+    "god_nodes": [
+      [
+        "aes.c",
+        6.3
+      ],
+      [
+        "loader4.c",
+        5.300000000000001
+      ],
+      [
+        "loader3.c",
+        4.6000000000000005
+      ],
+      [
+        "loader2.c",
+        4.4
+      ],
+      [
+        "loader.c",
+        3.9000000000000004
+      ],
+      [
+        "aes.h",
+        3.3
+      ],
+      [
+        "lzss.c",
+        1.4000000000000001
+      ],
+      [
+        "crypter.py",
+        0.30000000000000004
+      ],
+      [
+        "pack.c",
+        0.1
+      ],
+      [
+        "test.c",
+        0.1
+      ]
+    ],
+    "communities": [
+      {
+        "id": 0,
+        "label": "root",
+        "file_ids": [
+          "aes.c",
+          "aes.h"
+        ],
+        "cohesion": 1.0,
+        "size": 2
+      }
+    ],
+    "surprising_connections": [],
+    "suggested_questions": [
+      "What does aes.c depend on, and what depends on it? (1 connections)",
+      "What does loader4.c depend on, and what depends on it? (0 connections)",
+      "What does loader3.c depend on, and what depends on it? (0 connections)",
+      "What is AES_ctx in aes.h and how is it used?",
+      "What is the overall architecture of this codebase?"
+    ]
+  },
+  "layers": {
+    "aes.c": "utility",
+    "aes.h": "utility",
+    "app.py": "utility",
+    "crypter.py": "utility",
+    "install.sh": "utility",
+    "loader.c": "utility",
+    "loader2.c": "utility",
+    "loader3.c": "utility",
+    "loader4.c": "utility",
+    "lzss.c": "utility",
+    "pack.c": "utility",
+    "test.c": "testing",
+    "unpack.c": "utility"
+  },
+  "security": {
+    "findings": []
+  }
+}
