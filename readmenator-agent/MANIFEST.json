@@ -1,0 +1,24 @@
+{
+  "tool": "readmenator",
+  "generated_at": "2026-09-16T05:49:50Z",
+  "project_root": "/tmp/push_CompressLoader_20260916_013256",
+  "files": 13,
+  "symbols": 430,
+  "imports": 109,
+  "resolved_imports": 1,
+  "security_findings": 0,
+  "languages": {
+    "c": 9,
+    "h": 1,
+    "py": 2,
+    "sh": 1
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "workflow": [
+    "grep -n '<keyword>' INDEX.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE.md SYMBOLS.md"
+  ],
+  "regenerate": "readmenator . --rebuild"
+}
