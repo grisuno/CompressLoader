@@ -1,0 +1,1072 @@
+{
+  "concepts": [
+    {
+      "name": "decode",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "lzss.c",
+        "test.c",
+        "unpack.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "aes",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 39,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "decrypt",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "get",
+      "files": [
+        "aes.c",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 30,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "bit",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "lzss.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "encrypt",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "lzss",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "lzss.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "hook",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 36,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "crt",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "command",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "current",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "data",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "freeargv",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "line",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "process",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "read",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "analysis",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "anti",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "thread",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "hooks",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "peloader",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "secure",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "warnings",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "argc",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "argv",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "bits",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cmdline",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "destruct",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "exit",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "getmainargs",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "iat",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "masquerade",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mem",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "ntheaders",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "pedirectory",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "rand",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "reader",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "repair",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "run",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "self",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "success",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "wargv",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "wgetmainargs",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "key",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader4.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "buffer",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "lzss.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "sleep",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "shellcode",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "trampoline",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "uptr",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "fluctuation",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "aes",
+      "target": "buffer",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "buffer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "encrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "encrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "key",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "key",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "aes",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "aes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "decrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "decrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "encrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "encrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "key",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "buffer",
+      "target": "key",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "aes",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "aes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "buffer",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "buffer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "encrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "encrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "key",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "key",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "aes",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "aes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "buffer",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "buffer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "key",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "key",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "aes",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "aes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "buffer",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "buffer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "decrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "decrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "encrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "encrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "key",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "key",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "aes",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "aes",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "buffer",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "buffer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "decrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "decrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "encrypt",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "encrypt",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `aes` centralizes 6 files; Antithesis: `analysis` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `anti` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `argc` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `argv` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `bit` pulls 5 files with 4 shared (Jaccard 0.57); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `bits` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `cmdline` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `command` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `crt` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `aes` centralizes 6 files; Antithesis: `current` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}

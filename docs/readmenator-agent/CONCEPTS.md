@@ -1,0 +1,120 @@
+# Concepts
+
+Nouns map atomically to file sets (EXTRACTED); verbs aggregate structural edges (INFERRED).
+
+- `decode` | files=7 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `lzss.c`, `test.c`, `unpack.c`
+- `aes` | files=6 | mentions=39 | `aes.c`, `aes.h`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `decrypt` | files=6 | mentions=12 | `aes.c`, `aes.h`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `get` | files=5 | mentions=30 | `aes.c`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `bit` | files=5 | mentions=9 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `lzss.c`
+- `encrypt` | files=5 | mentions=7 | `aes.c`, `aes.h`, `loader2.c`, `loader3.c`, `loader4.c`
+- `lzss` | files=5 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `lzss.c`
+- `hook` | files=4 | mentions=36 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `crt` | files=4 | mentions=9 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `command` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `current` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `data` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `freeargv` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `line` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `process` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `read` | files=4 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `analysis` | files=4 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `anti` | files=4 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `thread` | files=4 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `hooks` | files=4 | mentions=5 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `peloader` | files=4 | mentions=5 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `secure` | files=4 | mentions=5 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `warnings` | files=4 | mentions=5 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `argc` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `argv` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `bits` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `cmdline` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `destruct` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `exit` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `getmainargs` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `iat` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `masquerade` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `mem` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `ntheaders` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `pedirectory` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `rand` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `reader` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `repair` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `run` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `self` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `success` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `wargv` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `wgetmainargs` | files=4 | mentions=4 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`
+- `key` | files=3 | mentions=9 | `aes.c`, `aes.h`, `loader4.c`
+- `buffer` | files=3 | mentions=7 | `aes.c`, `aes.h`, `lzss.c`
+- `sleep` | files=3 | mentions=7 | `loader2.c`, `loader3.c`, `loader4.c`
+- `shellcode` | files=3 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`
+- `trampoline` | files=3 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`
+- `uptr` | files=3 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`
+- `fluctuation` | files=3 | mentions=5 | `loader2.c`, `loader3.c`, `loader4.c`
+
+## Verb Edges
+
+- `aes` --consumes--> `buffer` (strength 1.00)
+- `aes` --depends_on--> `buffer` (strength 1.00)
+- `aes` --consumes--> `decrypt` (strength 1.00)
+- `aes` --depends_on--> `decrypt` (strength 1.00)
+- `aes` --consumes--> `encrypt` (strength 1.00)
+- `aes` --depends_on--> `encrypt` (strength 1.00)
+- `aes` --consumes--> `key` (strength 1.00)
+- `aes` --depends_on--> `key` (strength 1.00)
+- `buffer` --consumes--> `aes` (strength 1.00)
+- `buffer` --depends_on--> `aes` (strength 1.00)
+- `buffer` --consumes--> `decrypt` (strength 1.00)
+- `buffer` --depends_on--> `decrypt` (strength 1.00)
+- `buffer` --consumes--> `encrypt` (strength 1.00)
+- `buffer` --depends_on--> `encrypt` (strength 1.00)
+- `buffer` --consumes--> `key` (strength 1.00)
+- `buffer` --depends_on--> `key` (strength 1.00)
+- `decrypt` --consumes--> `aes` (strength 1.00)
+- `decrypt` --depends_on--> `aes` (strength 1.00)
+- `decrypt` --consumes--> `buffer` (strength 1.00)
+- `decrypt` --depends_on--> `buffer` (strength 1.00)
+- `decrypt` --consumes--> `encrypt` (strength 1.00)
+- `decrypt` --depends_on--> `encrypt` (strength 1.00)
+- `decrypt` --consumes--> `key` (strength 1.00)
+- `decrypt` --depends_on--> `key` (strength 1.00)
+- `encrypt` --consumes--> `aes` (strength 1.00)
+- `encrypt` --depends_on--> `aes` (strength 1.00)
+- `encrypt` --consumes--> `buffer` (strength 1.00)
+- `encrypt` --depends_on--> `buffer` (strength 1.00)
+- `encrypt` --consumes--> `decrypt` (strength 1.00)
+- `encrypt` --depends_on--> `decrypt` (strength 1.00)
+- `encrypt` --consumes--> `key` (strength 1.00)
+- `encrypt` --depends_on--> `key` (strength 1.00)
+- `get` --consumes--> `aes` (strength 1.00)
+- `get` --depends_on--> `aes` (strength 1.00)
+- `get` --consumes--> `buffer` (strength 1.00)
+- `get` --depends_on--> `buffer` (strength 1.00)
+- `get` --consumes--> `decrypt` (strength 1.00)
+- `get` --depends_on--> `decrypt` (strength 1.00)
+- `get` --consumes--> `encrypt` (strength 1.00)
+- `get` --depends_on--> `encrypt` (strength 1.00)
+- `get` --consumes--> `key` (strength 1.00)
+- `get` --depends_on--> `key` (strength 1.00)
+- `key` --consumes--> `aes` (strength 1.00)
+- `key` --depends_on--> `aes` (strength 1.00)
+- `key` --consumes--> `buffer` (strength 1.00)
+- `key` --depends_on--> `buffer` (strength 1.00)
+- `key` --consumes--> `decrypt` (strength 1.00)
+- `key` --depends_on--> `decrypt` (strength 1.00)
+- `key` --consumes--> `encrypt` (strength 1.00)
+- `key` --depends_on--> `encrypt` (strength 1.00)
+
+## Dialectic
+
+- Thesis: `aes` centralizes 6 files; Antithesis: `analysis` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `anti` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `argc` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `argv` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `bit` pulls 5 files with 4 shared (Jaccard 0.57); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `bits` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `cmdline` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `command` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `crt` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `aes` centralizes 6 files; Antithesis: `current` pulls 4 files with 4 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
