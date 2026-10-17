@@ -1,0 +1,120 @@
+# Concepts
+
+Nouns map atomically to file sets (EXTRACTED); verbs aggregate structural edges (INFERRED).
+
+- `decode` | files=9 | mentions=15 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `lz4.c`, `lz4.h`, `lzss.c`, `test.c`, `unpack.c`
+- `aes` | files=8 | mentions=43 | `aes.c`, `aes.h`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `bit` | files=8 | mentions=17 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`, `lz4.c`, `lzss.c`
+- `decrypt` | files=8 | mentions=16 | `aes.c`, `aes.h`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `get` | files=7 | mentions=44 | `aes.c`, `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `encrypt` | files=7 | mentions=9 | `aes.c`, `aes.h`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `lzss` | files=7 | mentions=9 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`, `lzss.c`
+- `hook` | files=6 | mentions=54 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `command` | files=6 | mentions=12 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `data` | files=6 | mentions=12 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `line` | files=6 | mentions=12 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `read` | files=6 | mentions=12 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `crt` | files=6 | mentions=11 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `process` | files=6 | mentions=10 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `destruct` | files=6 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `self` | files=6 | mentions=8 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `secure` | files=6 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `warnings` | files=6 | mentions=7 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `argc` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `argv` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `bits` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `cmdline` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `exit` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `fast` | files=6 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`, `lz4.c`
+- `getmainargs` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `iat` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `masquerade` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `ntheaders` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `pedirectory` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `reader` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `repair` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `wargv` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `wgetmainargs` | files=6 | mentions=6 | `loader.c`, `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `decompress` | files=5 | mentions=12 | `loader5.c`, `loader6.c`, `lz4.c`, `lz4.h`, `test.c`
+- `key` | files=5 | mentions=11 | `aes.c`, `aes.h`, `loader4.c`, `loader5.c`, `loader6.c`
+- `trampoline` | files=5 | mentions=10 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `fluctuation` | files=5 | mentions=9 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `ntdll` | files=5 | mentions=9 | `loader.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `sleep` | files=5 | mentions=9 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `lean` | files=5 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `loader` | files=5 | mentions=6 | `loader.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `mean` | files=5 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `set` | files=5 | mentions=6 | `aes.c`, `aes.h`, `loader4.c`, `lz4.c`, `lz4.h`
+- `win32` | files=5 | mentions=6 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `address` | files=5 | mentions=5 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `buffers` | files=5 | mentions=5 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `hookexit` | files=5 | mentions=5 | `loader.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `ifdef` | files=5 | mentions=5 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `return` | files=5 | mentions=5 | `loader2.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+- `unhook` | files=5 | mentions=5 | `loader.c`, `loader3.c`, `loader4.c`, `loader5.c`, `loader6.c`
+
+## Verb Edges
+
+- `aes` --consumes--> `set` (strength 1.00)
+- `aes` --depends_on--> `set` (strength 1.00)
+- `bit` --consumes--> `decode` (strength 1.00)
+- `bit` --depends_on--> `decode` (strength 1.00)
+- `bit` --consumes--> `decompress` (strength 1.00)
+- `bit` --depends_on--> `decompress` (strength 1.00)
+- `bit` --consumes--> `set` (strength 1.00)
+- `bit` --depends_on--> `set` (strength 1.00)
+- `decompress` --consumes--> `decode` (strength 1.00)
+- `decompress` --depends_on--> `decode` (strength 1.00)
+- `decompress` --consumes--> `set` (strength 1.00)
+- `decompress` --depends_on--> `set` (strength 1.00)
+- `decrypt` --consumes--> `set` (strength 1.00)
+- `decrypt` --depends_on--> `set` (strength 1.00)
+- `encrypt` --consumes--> `set` (strength 1.00)
+- `encrypt` --depends_on--> `set` (strength 1.00)
+- `fast` --consumes--> `decode` (strength 1.00)
+- `fast` --depends_on--> `decode` (strength 1.00)
+- `fast` --consumes--> `decompress` (strength 1.00)
+- `fast` --depends_on--> `decompress` (strength 1.00)
+- `fast` --consumes--> `set` (strength 1.00)
+- `fast` --depends_on--> `set` (strength 1.00)
+- `get` --consumes--> `set` (strength 1.00)
+- `get` --depends_on--> `set` (strength 1.00)
+- `key` --consumes--> `set` (strength 1.00)
+- `key` --depends_on--> `set` (strength 1.00)
+- `address` --consumes--> `decode` (strength 0.67)
+- `address` --depends_on--> `decode` (strength 0.67)
+- `address` --consumes--> `decompress` (strength 0.67)
+- `address` --depends_on--> `decompress` (strength 0.67)
+- `address` --consumes--> `set` (strength 0.67)
+- `address` --depends_on--> `set` (strength 0.67)
+- `aes` --consumes--> `decode` (strength 0.67)
+- `aes` --depends_on--> `decode` (strength 0.67)
+- `aes` --consumes--> `decompress` (strength 0.67)
+- `aes` --depends_on--> `decompress` (strength 0.67)
+- `argc` --consumes--> `decode` (strength 0.67)
+- `argc` --depends_on--> `decode` (strength 0.67)
+- `argc` --consumes--> `decompress` (strength 0.67)
+- `argc` --depends_on--> `decompress` (strength 0.67)
+- `argc` --consumes--> `set` (strength 0.67)
+- `argc` --depends_on--> `set` (strength 0.67)
+- `argv` --consumes--> `decode` (strength 0.67)
+- `argv` --depends_on--> `decode` (strength 0.67)
+- `argv` --consumes--> `decompress` (strength 0.67)
+- `argv` --depends_on--> `decompress` (strength 0.67)
+- `argv` --consumes--> `set` (strength 0.67)
+- `argv` --depends_on--> `set` (strength 0.67)
+- `bits` --consumes--> `decode` (strength 0.67)
+- `bits` --depends_on--> `decode` (strength 0.67)
+
+## Dialectic
+
+- Thesis: `address` centralizes 5 files; Antithesis: `aes` pulls 8 files with 5 shared (Jaccard 0.62); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `argc` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `argv` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `bit` pulls 8 files with 5 shared (Jaccard 0.62); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `bits` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `buffers` pulls 5 files with 5 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `cmdline` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `command` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `crt` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `address` centralizes 5 files; Antithesis: `data` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?

@@ -1,0 +1,480 @@
+# Subsystem: root (page 1 of 2)
+Pages: [KB_root.md](KB_root.md), [KB_root_p2.md](KB_root_p2.md)
+
+## aes.c
+- Doc: tiny-AES-c (https://github.com/kokke/tiny-AES-c)
+- Layer: utility
+- Language: c
+- Symbols:
+  - `getSBoxValue` (function, line 13) `static uint8_t getSBoxValue(uint8_t num)`
+  - `getSBoxInvert` (function, line 35) `static uint8_t getSBoxInvert(uint8_t num)`
+  - `Td0` (function, line 57) `static uint8_t Td0(int x)`
+  - `Td1` (function, line 58) `static uint8_t Td1(int x)`
+  - `Td2` (function, line 59) `static uint8_t Td2(int x)`
+  - `Td3` (function, line 60) `static uint8_t Td3(int x)`
+  - `Td4` (function, line 61) `static uint8_t Td4(int x)`
+  - `KeyExpansion` (function, line 166) `static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key)`
+  - `AES_init_ctx` (function, line 239) `void AES_init_ctx(struct AES_ctx* ctx, const uint8_t* key)`
+  - `AES_init_ctx_iv` (function, line 244) `void AES_init_ctx_iv(struct AES_ctx* ctx, const uint8_t* key, const uint8_t* iv)`
+  - `AES_ctx_set_iv` (function, line 249) `void AES_ctx_set_iv(struct AES_ctx* ctx, const uint8_t* iv)`
+  - `AddRoundKey` (function, line 257) `static void AddRoundKey(uint8_t round, state_t* state, const uint8_t* RoundKey)`
+  - `SubBytes` (function, line 271) `static void SubBytes(state_t* state)`
+  - `ShiftRows` (function, line 286) `static void ShiftRows(state_t* state)`
+  - `xtime` (function, line 314) `static uint8_t xtime(uint8_t x)`
+  - `MixColumns` (function, line 320) `static void MixColumns(state_t* state)`
+  - `Multiply` (function, line 340) `static uint8_t Multiply(uint8_t x, uint8_t y)`
+  - `InvMixColumns` (function, line 370) `static void InvMixColumns(state_t* state)`
+  - `InvSubBytes` (function, line 391) `static void InvSubBytes(state_t* state)`
+  - `InvShiftRows` (function, line 403) `static void InvShiftRows(state_t* state)`
+  - `Cipher` (function, line 433) `static void Cipher(state_t* state, const uint8_t* RoundKey)`
+  - `InvCipher` (function, line 459) `static void InvCipher(state_t* state, const uint8_t* RoundKey)`
+  - `AES_ECB_encrypt` (function, line 490) `void AES_ECB_encrypt(const struct AES_ctx* ctx, uint8_t* buf)`
+  - `AES_ECB_decrypt` (function, line 496) `void AES_ECB_decrypt(const struct AES_ctx* ctx, uint8_t* buf)`
+  - `XorWithIv` (function, line 512) `static void XorWithIv(uint8_t* buf, const uint8_t* Iv)`
+  - `AES_CBC_encrypt_buffer` (function, line 521) `void AES_CBC_encrypt_buffer(struct AES_ctx *ctx, uint8_t* buf, size_t length)`
+  - `AES_CBC_decrypt_buffer` (function, line 536) `void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length)`
+  - `AES_CTR_xcrypt_buffer` (function, line 558) `void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length)`
+  - `Nb` (macro, line 5) `#define Nb`
+  - `KEYLEN_256` (macro, line 9) `#define KEYLEN_256`
+  - `RKLENGTH` (macro, line 10) `#define RKLENGTH`
+  - `BLOCKLEN` (macro, line 11) `#define BLOCKLEN`
+  - `Nb` (macro, line 67) `#define Nb`
+  - `Nk` (macro, line 70) `#define Nk`
+  - `Nr` (macro, line 71) `#define Nr`
+  - `Nk` (macro, line 73) `#define Nk`
+  - `Nr` (macro, line 74) `#define Nr`
+  - `Nk` (macro, line 76) `#define Nk`
+  - `Nr` (macro, line 77) `#define Nr`
+  - `MULTIPLY_AS_A_FUNCTION` (macro, line 84) `#define MULTIPLY_AS_A_FUNCTION`
+  - `getSBoxValue` (macro, line 163) `#define getSBoxValue(num)`
+  - `Multiply` (macro, line 349) `#define Multiply(x, y)`
+  - `getSBoxInvert` (macro, line 365) `#define getSBoxInvert(num)`
+- Depends on: `aes.h`
+
+## aes.h
+- Doc: #define the macros below to 1/0 to enable/disable the mode of operation.
+- Layer: utility
+- Language: h
+- Symbols:
+  - `AES_ctx` (struct, line 33)
+  - `AES_init_ctx` (function, line 41) `void AES_init_ctx(struct AES_ctx* ctx, const uint8_t* key);`
+  - `AES_init_ctx_iv` (function, line 43) `void AES_init_ctx_iv(struct AES_ctx* ctx, const uint8_t* key, const uint8_t* iv);`
+  - `AES_ctx_set_iv` (function, line 44) `void AES_ctx_set_iv(struct AES_ctx* ctx, const uint8_t* iv);`
+  - `AES_ECB_encrypt` (function, line 48) `void AES_ECB_encrypt(const struct AES_ctx* ctx, uint8_t* buf);`
+  - `AES_ECB_decrypt` (function, line 49) `void AES_ECB_decrypt(const struct AES_ctx* ctx, uint8_t* buf);`
+  - `AES_CBC_encrypt_buffer` (function, line 53) `void AES_CBC_encrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length);`
+  - `AES_CBC_decrypt_buffer` (function, line 54) `void AES_CBC_decrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length);`
+  - `AES_CTR_xcrypt_buffer` (function, line 58) `void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length);`
+  - `_AES_H_` (macro, line 2) `#define _AES_H_`
+  - `CBC` (macro, line 9) `#define CBC`
+  - `ECB` (macro, line 12) `#define ECB`
+  - `CTR` (macro, line 15) `#define CTR`
+  - `AES256` (macro, line 18) `#define AES256`
+  - `AES_BLOCKLEN` (macro, line 20) `#define AES_BLOCKLEN`
+  - `AES_KEYLEN` (macro, line 23) `#define AES_KEYLEN`
+  - `AES_keyExpSize` (macro, line 24) `#define AES_keyExpSize`
+  - `AES_KEYLEN` (macro, line 26) `#define AES_KEYLEN`
+  - `AES_keyExpSize` (macro, line 27) `#define AES_keyExpSize`
+  - `AES_KEYLEN` (macro, line 29) `#define AES_KEYLEN`
+  - `AES_keyExpSize` (macro, line 30) `#define AES_keyExpSize`
+- Imported by: `aes.c`
+
+## app.py
+- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
+- Layer: utility
+- Language: py
+
+## crypter.py
+- Doc: change_ext: Reemplaza la extensión del archivo por una nueva (sin el punto).
+- Layer: utility
+- Language: py
+- Symbols:
+  - `AESencrypt` (function, line 9) `def AESencrypt(plaintext, key)`
+  - `change_ext` (function, line 19) `def change_ext(filename, new_ext)`
+  - `main` (function, line 24) `def main()`
+
+## install.sh
+- Layer: utility
+- Language: sh
+
+## loader.c
+- Doc: hookGetCommandLineW: Implementación de hooks
+- Layer: utility
+- Language: c
+- Symbols:
+  - `_BASE_RELOCATION_ENTRY` (struct, line 41)
+  - `DATA` (struct, line 46)
+  - `BitReader` (struct, line 58)
+  - `NTSTATUS` (type_alias, line 38) `typedef LONG NTSTATUS;`
+  - `12` (type_alias, line 40) `typedef struct _BASE_RELOCATION_ENTRY { WORD Offset : 12;`
+  - `read_bit` (function, line 64) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 75) `static int read_bits(BitReader* br, int n)`
+  - `lzss_decode_mem` (function, line 85) `BOOL lzss_decode_mem(const unsigned char* input, size_t input_size, unsigned char** output, size_...`
+  - `hookGetCommandLineW` (function, line 217) `LPWSTR hookGetCommandLineW()`
+  - `hookGetCommandLineA` (function, line 218) `LPSTR hookGetCommandLineA()`
+  - `hook__p___argv` (function, line 219) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 220) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 221) `int* __cdecl hook__p___argc(void)`
+  - `anti_analysis` (function, line 226) `BOOL anti_analysis()`
+  - `selfDestruct` (function, line 251) `void selfDestruct()`
+  - `hook__wgetmainargs` (function, line 307) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hook__getmainargs` (function, line 313) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hookexit` (function, line 319) `int __cdecl hookexit(int status)`
+  - `hookExitProcess` (function, line 324) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `masqueradeCmdline` (function, line 328) `void masqueradeCmdline()`
+  - `freeargvA` (function, line 366) `void freeargvA(char** array, int Argc)`
+  - `freeargvW` (function, line 374) `void freeargvW(wchar_t** array, int Argc)`
+  - `GetNTHeaders` (function, line 382) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 394) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 404) `BOOL RepairIAT(PVOID modulePtr)`
+  - `_stricmp` (function, line 458) `_stricmp(func_name, "exit") == 0 ||
+                    _stricmp(func_name, "_Exit") == 0 ||
+    ...`
+  - `RunPE` (function, line 479) `DWORD WINAPI RunPE(LPVOID lpParameter)`
+  - `PELoader` (function, line 485) `void PELoader(char* data, DWORD datasize)`
+  - `getNtdll` (function, line 559) `LPVOID getNtdll()`
+  - `Unhook` (function, line 602) `BOOL Unhook(LPVOID cleanNtdll)`
+  - `DecryptAES` (function, line 638) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `GetData` (function, line 671) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource)`
+  - `main` (function, line 792) `int main(int argc, char** argv)`
+  - `_CRT_RAND_S` (macro, line 19) `#define _CRT_RAND_S`
+  - `NT_SUCCESS` (macro, line 30) `#define NT_SUCCESS(Status)`
+  - `NtCurrentThread` (macro, line 33) `#define NtCurrentThread()`
+  - `NtCurrentProcess` (macro, line 34) `#define NtCurrentProcess()`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 37) `#define _CRT_SECURE_NO_WARNINGS`
+  - `EI` (macro, line 52) `#define EI`
+  - `EJ` (macro, line 53) `#define EJ`
+  - `P` (macro, line 54) `#define P`
+  - `N` (macro, line 55) `#define N`
+  - `F` (macro, line 56) `#define F`
+
+## loader2.c
+- Doc: === DECLARACIONES DE HOOKS ===
+- Layer: utility
+- Language: c
+- Symbols:
+  - `BitReader` (struct, line 46)
+  - `FluctuationMetadata` (struct, line 111)
+  - `HookTrampolineBuffers` (struct, line 119)
+  - `HookedSleep` (struct, line 129)
+  - `DATA` (struct, line 134)
+  - `UPTR` (type_alias, line 100) `typedef UINT64 UPTR;`
+  - `UPTR` (type_alias, line 102) `typedef UINT32 UPTR;`
+  - `read_bit` (function, line 52) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 61) `static int read_bits(BitReader* br, int n)`
+  - `DecryptAES` (function, line 71) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `get_return_address` (function, line 183) `static inline UPTR get_return_address(void)`
+  - `xor32` (function, line 187) `void xor32(uint8_t *buf, SIZE_T sz, uint32_t key)`
+  - `isShellcodeThread` (function, line 195) `bool isShellcodeThread(LPVOID addr)`
+  - `shellcodeEncryptDecrypt` (function, line 206) `void shellcodeEncryptDecrypt(LPVOID caller)`
+  - `MySleep` (function, line 246) `static void WINAPI MySleep(DWORD ms)`
+  - `fastTrampoline` (function, line 262) `bool fastTrampoline(bool install, BYTE *target, LPVOID jump, HookTrampolineBuffers *b)`
+  - `VEHHandler` (function, line 303) `LONG NTAPI VEHHandler(PEXCEPTION_POINTERS xp)`
+  - `lzss_decode_mem` (function, line 324) `BOOL lzss_decode_mem(const unsigned char* input, size_t input_size, unsigned char** output, size_...`
+  - `masqueradeCmdline` (function, line 388) `void masqueradeCmdline()`
+  - `GetNTHeaders` (function, line 419) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 430) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 439) `BOOL RepairIAT(PVOID modulePtr)`
+  - `hookGetCommandLineA` (function, line 490) `LPSTR hookGetCommandLineA()`
+  - `hookGetCommandLineW` (function, line 491) `LPWSTR hookGetCommandLineW()`
+  - `hook__p___argv` (function, line 492) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 493) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 494) `int* __cdecl hook__p___argc(void)`
+  - `hook__getmainargs` (function, line 495) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hook__wgetmainargs` (function, line 498) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hookExitProcess` (function, line 501) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `RunPE` (function, line 503) `DWORD WINAPI RunPE(LPVOID lpParameter)`
+  - `PELoader` (function, line 509) `void PELoader(char* data, DWORD datasize)`
+  - `anti_analysis` (function, line 597) `BOOL anti_analysis()`
+  - `selfDestruct` (function, line 618) `void selfDestruct()`
+  - `GetData` (function, line 647) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource)`
+  - `main` (function, line 732) `int main(int argc, char** argv)`
+  - `freeargvA` (function, line 169) `void freeargvA(char** array, int Argc);`
+  - `freeargvW` (function, line 170) `void freeargvW(wchar_t** array, int Argc);`
+  - `_CRT_RAND_S` (macro, line 1) `#define _CRT_RAND_S`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 2) `#define WIN32_LEAN_AND_MEAN`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 26) `#define _CRT_SECURE_NO_WARNINGS`
+  - `NT_SUCCESS` (macro, line 29) `#define NT_SUCCESS(Status)`
+  - `NtCurrentThread` (macro, line 32) `#define NtCurrentThread()`
+  - `NtCurrentProcess` (macro, line 33) `#define NtCurrentProcess()`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 35) `#define WIN32_LEAN_AND_MEAN`
+  - `UNICODE` (macro, line 36) `#define UNICODE`
+  - `_UNICODE` (macro, line 37) `#define _UNICODE`
+  - `EI` (macro, line 40) `#define EI`
+  - `EJ` (macro, line 41) `#define EJ`
+  - `P` (macro, line 42) `#define P`
+  - `N` (macro, line 43) `#define N`
+  - `F` (macro, line 44) `#define F`
+  - `log` (macro, line 154) `#define log(...)`
+
+## loader3.c
+- Doc: hookGetCommandLineA: Hooks
+- Layer: utility
+- Language: c
+- Symbols:
+  - `BitReader` (struct, line 58)
+  - `FluctuationMetadata` (struct, line 174)
+  - `HookTrampolineBuffers` (struct, line 182)
+  - `HookedSleep` (struct, line 192)
+  - `DATA` (struct, line 197)
+  - `UPTR` (type_alias, line 163) `typedef UINT64 UPTR;`
+  - `UPTR` (type_alias, line 165) `typedef UINT32 UPTR;`
+  - `read_bit` (function, line 64) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 73) `static int read_bits(BitReader* br, int n)`
+  - `lzss_decode_mem` (function, line 83) `BOOL lzss_decode_mem(const unsigned char* input, size_t input_size, unsigned char** output, size_...`
+  - `DecryptAES` (function, line 139) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `get_return_address` (function, line 238) `static inline UPTR get_return_address(void)`
+  - `xor32` (function, line 242) `void xor32(uint8_t *buf, SIZE_T sz, uint32_t key)`
+  - `isShellcodeThread` (function, line 249) `bool isShellcodeThread(LPVOID addr)`
+  - `shellcodeEncryptDecrypt` (function, line 258) `void shellcodeEncryptDecrypt(LPVOID caller)`
+  - `MySleep` (function, line 292) `static void WINAPI MySleep(DWORD ms)`
+  - `fastTrampoline` (function, line 306) `bool fastTrampoline(bool install, BYTE *target, LPVOID jump, HookTrampolineBuffers *b)`
+  - `VEHHandler` (function, line 342) `LONG NTAPI VEHHandler(PEXCEPTION_POINTERS xp)`
+  - `masqueradeCmdline` (function, line 360) `void masqueradeCmdline()`
+  - `freeargvA` (function, line 390) `void freeargvA(char** array, int Argc)`
+  - `freeargvW` (function, line 398) `void freeargvW(wchar_t** array, int Argc)`
+  - `GetNTHeaders` (function, line 406) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 417) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 426) `BOOL RepairIAT(PVOID modulePtr)`
+  - `hookGetCommandLineA` (function, line 478) `LPSTR hookGetCommandLineA()`
+  - `hookGetCommandLineW` (function, line 479) `LPWSTR hookGetCommandLineW()`
+  - `hook__p___argv` (function, line 480) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 481) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 482) `int* __cdecl hook__p___argc(void)`
+  - `hook__getmainargs` (function, line 483) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hook__wgetmainargs` (function, line 486) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hookexit` (function, line 489) `int __cdecl hookexit(int status)`
+  - `hookExitProcess` (function, line 493) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `RunPE` (function, line 497) `DWORD WINAPI RunPE(LPVOID lpParameter)`
+  - `PELoader` (function, line 503) `void PELoader(char* data, DWORD datasize)`
+  - `anti_analysis` (function, line 581) `BOOL anti_analysis()`
+  - `selfDestruct` (function, line 602) `void selfDestruct()`
+  - `getNtdll` (function, line 629) `LPVOID getNtdll()`
+  - `Unhook` (function, line 665) `BOOL Unhook(LPVOID cleanNtdll)`
+  - `GetData` (function, line 689) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource)`
+  - `main` (function, line 757) `int main(int argc, char** argv)`
+  - `_CRT_RAND_S` (macro, line 16) `#define _CRT_RAND_S`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 17) `#define WIN32_LEAN_AND_MEAN`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 42) `#define _CRT_SECURE_NO_WARNINGS`
+  - `NT_SUCCESS` (macro, line 45) `#define NT_SUCCESS(Status)`
+  - `NtCurrentThread` (macro, line 48) `#define NtCurrentThread()`
+  - `NtCurrentProcess` (macro, line 49) `#define NtCurrentProcess()`
+  - `EI` (macro, line 52) `#define EI`
+  - `EJ` (macro, line 53) `#define EJ`
+  - `P` (macro, line 54) `#define P`
+  - `N` (macro, line 55) `#define N`
+  - `F` (macro, line 56) `#define F`
+  - `log` (macro, line 214) `#define log(...)`
+
+## loader4.c
+- Doc: deobf: Helper para desofuscar
+- Layer: utility
+- Language: c
+- Symbols:
+  - `BitReader` (struct, line 98)
+  - `FluctuationMetadata` (struct, line 287)
+  - `HookTrampolineBuffers` (struct, line 295)
+  - `HookedSleep` (struct, line 305)
+  - `DATA` (struct, line 310)
+  - `UPTR` (type_alias, line 276) `typedef UINT64 UPTR;`
+  - `UPTR` (type_alias, line 278) `typedef UINT32 UPTR;`
+  - `read_bit` (function, line 104) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 113) `static int read_bits(BitReader* br, int n)`
+  - `deobf` (function, line 124) `void deobf(const char* src, char* dst, size_t max_len)`
+  - `SetHWBP_NtContinue` (function, line 132) `BOOL SetHWBP_NtContinue(PVOID targetAddr, DWORD index)`
+  - `lzss_decode_mem` (function, line 163) `BOOL lzss_decode_mem(const unsigned char* input, size_t input_size, unsigned char** output, size_...`
+  - `PatchETW` (function, line 219) `BOOL PatchETW()`
+  - `DecryptAES` (function, line 252) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `get_return_address` (function, line 351) `static inline UPTR get_return_address(void)`
+  - `xor32` (function, line 355) `void xor32(uint8_t *buf, SIZE_T sz, uint32_t key)`
+  - `isShellcodeThread` (function, line 362) `bool isShellcodeThread(LPVOID addr)`
+  - `shellcodeEncryptDecrypt` (function, line 371) `void shellcodeEncryptDecrypt(LPVOID caller)`
+  - `MySleep` (function, line 405) `static void WINAPI MySleep(DWORD ms)`
+  - `fastTrampoline` (function, line 419) `bool fastTrampoline(bool install, BYTE *target, LPVOID jump, HookTrampolineBuffers *b)`
+  - `VEHHandler` (function, line 458) `LONG NTAPI VEHHandler(PEXCEPTION_POINTERS xp)`
+  - `masqueradeCmdline` (function, line 476) `void masqueradeCmdline()`
+  - `freeargvA` (function, line 506) `void freeargvA(char** array, int Argc)`
+  - `freeargvW` (function, line 514) `void freeargvW(wchar_t** array, int Argc)`
+  - `GetNTHeaders` (function, line 522) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 533) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 542) `BOOL RepairIAT(PVOID modulePtr)`
+  - `hookGetCommandLineA` (function, line 594) `LPSTR hookGetCommandLineA()`
+  - `hookGetCommandLineW` (function, line 595) `LPWSTR hookGetCommandLineW()`
+  - `hook__p___argv` (function, line 596) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 597) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 598) `int* __cdecl hook__p___argc(void)`
+  - `hook__getmainargs` (function, line 599) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hook__wgetmainargs` (function, line 602) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hookexit` (function, line 605) `int __cdecl hookexit(int status)`
+  - `hookExitProcess` (function, line 609) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `RunPE` (function, line 613) `DWORD WINAPI RunPE(LPVOID lpParameter)`
+  - `PELoader` (function, line 619) `void PELoader(char* data, DWORD datasize)`
+  - `anti_analysis` (function, line 699) `BOOL anti_analysis()`
+  - `selfDestruct` (function, line 720) `void selfDestruct()`
+  - `getNtdll` (function, line 747) `LPVOID getNtdll()`
+  - `Unhook` (function, line 785) `BOOL Unhook(LPVOID cleanNtdll)`
+  - `GetData` (function, line 811) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource)`
+  - `main` (function, line 879) `int main(int argc, char** argv)`
+  - `_CRT_RAND_S` (macro, line 16) `#define _CRT_RAND_S`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 17) `#define WIN32_LEAN_AND_MEAN`
+  - `XK` (macro, line 42) `#define XK`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 52) `#define _CRT_SECURE_NO_WARNINGS`
+  - `NT_SUCCESS` (macro, line 55) `#define NT_SUCCESS(Status)`
+  - `NtCurrentThread` (macro, line 58) `#define NtCurrentThread()`
+  - `NtCurrentProcess` (macro, line 59) `#define NtCurrentProcess()`
+  - `EI` (macro, line 62) `#define EI`
+  - `EJ` (macro, line 63) `#define EJ`
+  - `P` (macro, line 64) `#define P`
+  - `N` (macro, line 65) `#define N`
+  - `F` (macro, line 66) `#define F`
+  - `OBFUSCATE_KEY` (macro, line 69) `#define OBFUSCATE_KEY`
+  - `OBFSTR` (macro, line 72) `#define OBFSTR(str)`
+  - `OBFSTRW` (macro, line 85) `#define OBFSTRW(str)`
+  - `log` (macro, line 327) `#define log(...)`
+
+## loader5.c
+- Doc: EXEC_CTX: Estructuras para ejecución y fluctuación
+- Layer: utility
+- Language: c
+- Symbols:
+  - `SYSCALL_ENTRY` (struct, line 60)
+  - `BitReader` (struct, line 290)
+  - `EXEC_CTX` (struct, line 675)
+  - `FLUCTUATION_CTX` (struct, line 679)
+  - `HookTrampolineBuffers` (struct, line 739)
+  - `DATA` (struct, line 904)
+  - `HellGate` (function, line 65) `BOOL HellGate(PCSTR funcName, SYSCALL_ENTRY* entry)`
+  - `NtAllocateVirtualMemory_indirect` (function, line 86) `static NTSTATUS NtAllocateVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_...`
+  - `NtProtectVirtualMemory_indirect` (function, line 106) `static NTSTATUS NtProtectVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, PSIZE_T...`
+  - `NtWriteVirtualMemory_indirect` (function, line 126) `static NTSTATUS NtWriteVirtualMemory_indirect(HANDLE ProcessHandle, PVOID BaseAddress, PVOID Buff...`
+  - `NtFlushInstructionCache_indirect` (function, line 146) `static NTSTATUS NtFlushInstructionCache_indirect(HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T ...`
+  - `NtClose_indirect` (function, line 166) `static NTSTATUS NtClose_indirect(HANDLE Handle)`
+  - `NtOpenSection_indirect` (function, line 185) `static NTSTATUS NtOpenSection_indirect(PHANDLE SectionHandle, ACCESS_MASK DesiredAccess, POBJECT_...`
+  - `NtMapViewOfSection_indirect` (function, line 205) `static NTSTATUS NtMapViewOfSection_indirect(HANDLE SectionHandle, HANDLE ProcessHandle, PVOID* Ba...`
+  - `NtUnmapViewOfSection_indirect` (function, line 226) `static NTSTATUS NtUnmapViewOfSection_indirect(HANDLE ProcessHandle, PVOID BaseAddress)`
+  - `NtFreeVirtualMemory_indirect` (function, line 246) `static NTSTATUS NtFreeVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, PSIZE_T Re...`
+  - `decompress_payload` (function, line 271) `BOOL decompress_payload(const unsigned char* input, size_t inputSize, unsigned char** output, siz...`
+  - `read_bit` (function, line 296) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 305) `static int read_bits(BitReader* br, int n)`
+  - `decompress_payload` (function, line 315) `BOOL decompress_payload(const unsigned char* input, size_t input_size, unsigned char** output, si...`
+  - `DecryptAES` (function, line 375) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `IsDebuggerPresentEx` (function, line 396) `BOOL IsDebuggerPresentEx()`
+  - `HasHWBreakpoints` (function, line 400) `BOOL HasHWBreakpoints()`
+  - `IsDomainJoined` (function, line 407) `BOOL IsDomainJoined()`
+  - `HasRealGPU` (function, line 416) `BOOL HasRealGPU()`
+  - `HasUserActivity` (function, line 434) `BOOL HasUserActivity()`
+  - `IsSandbox` (function, line 443) `BOOL IsSandbox()`
+  - `PatchAmsiViaStomping` (function, line 478) `BOOL PatchAmsiViaStomping()`
+  - `getCleanNtdllViaKnownDlls` (function, line 510) `LPVOID getCleanNtdllViaKnownDlls()`
+  - `UnhookNtdll` (function, line 535) `BOOL UnhookNtdll(LPVOID cleanNtdll)`
+  - `MasqueradeCmdline` (function, line 568) `void MasqueradeCmdline()`
+  - `hookGetCommandLineA` (function, line 592) `LPSTR hookGetCommandLineA(void)`
+  - `hookGetCommandLineW` (function, line 593) `LPWSTR hookGetCommandLineW(void)`
+  - `hook__p___argv` (function, line 594) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 595) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 596) `int* __cdecl hook__p___argc(void)`
+  - `hook__getmainargs` (function, line 597) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hook__wgetmainargs` (function, line 600) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hookexit` (function, line 603) `int __cdecl hookexit(int status)`
+  - `hookExitProcess` (function, line 604) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `GetNTHeaders` (function, line 609) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 620) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 629) `BOOL RepairIAT(PVOID modulePtr)`
+  - `FluctuateEncrypt` (function, line 691) `void FluctuateEncrypt(FLUCTUATION_CTX* ctx)`
+  - `FluctuateDecrypt` (function, line 715) `void FluctuateDecrypt(FLUCTUATION_CTX* ctx)`
+  - `fastTrampoline` (function, line 746) `bool fastTrampoline(bool install, BYTE *target, LPVOID jump, HookTrampolineBuffers *b)`
+  - `MySleep` (function, line 770) `void WINAPI MySleep(DWORD ms)`
+  - `GetSpoofedReturnAddress` (function, line 784) `ULONG_PTR GetSpoofedReturnAddress()`
+  - `ExecuteWithSpoofedRet` (function, line 790) `void ExecuteWithSpoofedRet(PVOID entry)`
+  - `TimerExecCallback` (function, line 803) `VOID CALLBACK TimerExecCallback(PVOID lpParam, BOOLEAN TimerOrWaitFired)`
+  - `ModuleStompAndExecute` (function, line 810) `BOOL ModuleStompAndExecute(PVOID shellcode, SIZE_T shellcodeSize, int fluctMode)`
+  - `GetData` (function, line 909) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource, wchar_t* userAgent)`
+  - `SelfDestruct` (function, line 971) `void SelfDestruct()`
+  - `main` (function, line 995) `int main(int argc, char** argv)`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 14) `#define WIN32_LEAN_AND_MEAN`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 29) `#define _CRT_SECURE_NO_WARNINGS`
+  - `DEBUG_PRINT` (macro, line 35) `#define DEBUG_PRINT(fmt, ...)`
+  - `DEBUG_PRINT` (macro, line 37) `#define DEBUG_PRINT(fmt, ...)`
+  - `OBF_KEY` (macro, line 43) `#define OBF_KEY`
+  - `OBFSTR` (macro, line 45) `#define OBFSTR(str)`
+  - `EI` (macro, line 284) `#define EI`
+  - `EJ` (macro, line 285) `#define EJ`
+  - `P` (macro, line 286) `#define P`
+  - `N` (macro, line 287) `#define N`
+  - `F` (macro, line 288) `#define F`
+- Depends on: `lz4.h`
+
+## loader6.c
+- Doc: EXEC_CTX: Estructuras para ejecución y fluctuación
+- Layer: utility
+- Language: c
+- Symbols:
+  - `SYSCALL_ENTRY` (struct, line 62)
+  - `BitReader` (struct, line 292)
+  - `EXEC_CTX` (struct, line 678)
+  - `FLUCTUATION_CTX` (struct, line 682)
+  - `HookTrampolineBuffers` (struct, line 742)
+  - `DATA` (struct, line 908)
+  - `HellGate` (function, line 67) `BOOL HellGate(PCSTR funcName, SYSCALL_ENTRY* entry)`
+  - `NtAllocateVirtualMemory_indirect` (function, line 88) `static NTSTATUS NtAllocateVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_...`
+  - `NtProtectVirtualMemory_indirect` (function, line 108) `static NTSTATUS NtProtectVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, PSIZE_T...`
+  - `NtWriteVirtualMemory_indirect` (function, line 128) `static NTSTATUS NtWriteVirtualMemory_indirect(HANDLE ProcessHandle, PVOID BaseAddress, PVOID Buff...`
+  - `NtFlushInstructionCache_indirect` (function, line 148) `static NTSTATUS NtFlushInstructionCache_indirect(HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T ...`
+  - `NtClose_indirect` (function, line 168) `static NTSTATUS NtClose_indirect(HANDLE Handle)`
+  - `NtOpenSection_indirect` (function, line 187) `static NTSTATUS NtOpenSection_indirect(PHANDLE SectionHandle, ACCESS_MASK DesiredAccess, POBJECT_...`
+  - `NtMapViewOfSection_indirect` (function, line 207) `static NTSTATUS NtMapViewOfSection_indirect(HANDLE SectionHandle, HANDLE ProcessHandle, PVOID* Ba...`
+  - `NtUnmapViewOfSection_indirect` (function, line 228) `static NTSTATUS NtUnmapViewOfSection_indirect(HANDLE ProcessHandle, PVOID BaseAddress)`
+  - `NtFreeVirtualMemory_indirect` (function, line 248) `static NTSTATUS NtFreeVirtualMemory_indirect(HANDLE ProcessHandle, PVOID* BaseAddress, PSIZE_T Re...`
+  - `decompress_payload` (function, line 273) `BOOL decompress_payload(const unsigned char* input, size_t inputSize, unsigned char** output, siz...`
+  - `read_bit` (function, line 298) `static int read_bit(BitReader* br)`
+  - `read_bits` (function, line 307) `static int read_bits(BitReader* br, int n)`
+  - `decompress_payload` (function, line 317) `BOOL decompress_payload(const unsigned char* input, size_t input_size, unsigned char** output, si...`
+  - `DecryptAES` (function, line 377) `void DecryptAES(char* data, DWORD* pDataLen, char* key, DWORD keyLen)`
+  - `IsDebuggerPresentEx` (function, line 398) `BOOL IsDebuggerPresentEx()`
+  - `HasHWBreakpoints` (function, line 402) `BOOL HasHWBreakpoints()`
+  - `IsDomainJoined` (function, line 409) `BOOL IsDomainJoined()`
+  - `HasRealGPU` (function, line 418) `BOOL HasRealGPU()`
+  - `HasUserActivity` (function, line 436) `BOOL HasUserActivity()`
+  - `IsSandbox` (function, line 445) `BOOL IsSandbox()`
+  - `PatchAmsiViaStomping` (function, line 479) `BOOL PatchAmsiViaStomping()`
+  - `getCleanNtdllViaKnownDlls` (function, line 512) `LPVOID getCleanNtdllViaKnownDlls()`
+  - `UnhookNtdll` (function, line 537) `BOOL UnhookNtdll(LPVOID cleanNtdll)`
+  - `MasqueradeCmdline` (function, line 571) `void MasqueradeCmdline()`
+  - `hookGetCommandLineA` (function, line 595) `LPSTR hookGetCommandLineA(void)`
+  - `hookGetCommandLineW` (function, line 596) `LPWSTR hookGetCommandLineW(void)`
+  - `hook__p___argv` (function, line 597) `char*** __cdecl hook__p___argv(void)`
+  - `hook__p___wargv` (function, line 598) `wchar_t*** __cdecl hook__p___wargv(void)`
+  - `hook__p___argc` (function, line 599) `int* __cdecl hook__p___argc(void)`
+  - `hook__getmainargs` (function, line 600) `int hook__getmainargs(int* _Argc, char*** _Argv, char*** _Env, int _useless_, void* _useless)`
+  - `hook__wgetmainargs` (function, line 603) `int hook__wgetmainargs(int* _Argc, wchar_t*** _Argv, wchar_t*** _Env, int _useless_, void* _useless)`
+  - `hookexit` (function, line 606) `int __cdecl hookexit(int status)`
+  - `hookExitProcess` (function, line 607) `void __stdcall hookExitProcess(UINT statuscode)`
+  - `GetNTHeaders` (function, line 612) `char* GetNTHeaders(char* pe_buffer)`
+  - `GetPEDirectory` (function, line 623) `IMAGE_DATA_DIRECTORY* GetPEDirectory(PVOID pe_buffer, size_t dir_id)`
+  - `RepairIAT` (function, line 632) `BOOL RepairIAT(PVOID modulePtr)`
+  - `FluctuateEncrypt` (function, line 694) `void FluctuateEncrypt(FLUCTUATION_CTX* ctx)`
+  - `FluctuateDecrypt` (function, line 718) `void FluctuateDecrypt(FLUCTUATION_CTX* ctx)`
+  - `fastTrampoline` (function, line 749) `bool fastTrampoline(bool install, BYTE *target, LPVOID jump, HookTrampolineBuffers *b)`
+  - `MySleep` (function, line 773) `void WINAPI MySleep(DWORD ms)`
+  - `GetSpoofedReturnAddress` (function, line 787) `ULONG_PTR GetSpoofedReturnAddress()`
+  - `ExecuteWithSpoofedRet` (function, line 793) `void ExecuteWithSpoofedRet(PVOID entry)`
+  - `TimerExecCallback` (function, line 806) `VOID CALLBACK TimerExecCallback(PVOID lpParam, BOOLEAN TimerOrWaitFired)`
+  - `ModuleStompAndExecute` (function, line 814) `BOOL ModuleStompAndExecute(PVOID shellcode, SIZE_T shellcodeSize, int fluctMode)`
+  - `GetData` (function, line 913) `DATA GetData(wchar_t* whost, DWORD port, wchar_t* wresource, wchar_t* userAgent)`
+  - `SelfDestruct` (function, line 974) `void SelfDestruct()`
+  - `main` (function, line 998) `int main(int argc, char** argv)`
+  - `WIN32_LEAN_AND_MEAN` (macro, line 15) `#define WIN32_LEAN_AND_MEAN`
+  - `_CRT_SECURE_NO_WARNINGS` (macro, line 31) `#define _CRT_SECURE_NO_WARNINGS`
+  - `DEBUG_PRINT` (macro, line 37) `#define DEBUG_PRINT(fmt, ...)`
+  - `DEBUG_PRINT` (macro, line 39) `#define DEBUG_PRINT(fmt, ...)`
+  - `OBF_KEY` (macro, line 45) `#define OBF_KEY`
+  - `OBFSTR` (macro, line 47) `#define OBFSTR(str)`
+  - `EI` (macro, line 286) `#define EI`
+  - `EJ` (macro, line 287) `#define EJ`
+  - `P` (macro, line 288) `#define P`
+  - `N` (macro, line 289) `#define N`
+  - `F` (macro, line 290) `#define F`
+- Depends on: `lz4.h`
+
+
+Next: [KB_root_p2.md](KB_root_p2.md)

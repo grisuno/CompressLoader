@@ -1,0 +1,233 @@
+{
+ "schema_version": 1,
+ "format": "jsonl",
+ "meta": {
+  "modules": 16,
+  "entities": 414,
+  "languages": {
+   "c": 11,
+   "h": 2,
+   "py": 2,
+   "sh": 1
+  },
+  "kinds": {
+   "function": 224,
+   "macro": 126,
+   "module": 16,
+   "struct": 33,
+   "type_alias": 13,
+   "variable": 2
+  },
+  "truncated": false,
+  "skipped_files": 1,
+  "privacy_mode": false
+ },
+ "coverage": {
+  "overall": {
+   "documented": 89,
+   "total": 412,
+   "percent": 21.6
+  },
+  "by_kind": {
+   "function": {
+    "documented": 47,
+    "total": 224,
+    "percent": 21.0
+   },
+   "macro": {
+    "documented": 19,
+    "total": 126,
+    "percent": 15.1
+   },
+   "module": {
+    "documented": 7,
+    "total": 16,
+    "percent": 43.8
+   },
+   "struct": {
+    "documented": 8,
+    "total": 33,
+    "percent": 24.2
+   },
+   "type_alias": {
+    "documented": 8,
+    "total": 13,
+    "percent": 61.5
+   }
+  },
+  "by_module": {
+   "aes.c": {
+    "documented": 8,
+    "total": 24,
+    "percent": 33.3
+   },
+   "aes.h": {
+    "documented": 5,
+    "total": 21,
+    "percent": 23.8
+   },
+   "app.py": {
+    "documented": 1,
+    "total": 1,
+    "percent": 100.0
+   },
+   "crypter.py": {
+    "documented": 1,
+    "total": 4,
+    "percent": 25.0
+   },
+   "install.sh": {
+    "documented": 0,
+    "total": 1,
+    "percent": 0.0
+   },
+   "loader.c": {
+    "documented": 6,
+    "total": 42,
+    "percent": 14.3
+   },
+   "loader2.c": {
+    "documented": 7,
+    "total": 50,
+    "percent": 14.0
+   },
+   "loader3.c": {
+    "documented": 10,
+    "total": 50,
+    "percent": 20.0
+   },
+   "loader4.c": {
+    "documented": 14,
+    "total": 57,
+    "percent": 24.6
+   },
+   "loader5.c": {
+    "documented": 13,
+    "total": 55,
+    "percent": 23.6
+   },
+   "loader6.c": {
+    "documented": 13,
+    "total": 55,
+    "percent": 23.6
+   },
+   "lz4.c": {
+    "documented": 6,
+    "total": 24,
+    "percent": 25.0
+   },
+   "lz4.h": {
+    "documented": 2,
+    "total": 14,
+    "percent": 14.3
+   },
+   "lzss.c": {
+    "documented": 1,
+    "total": 8,
+    "percent": 12.5
+   },
+   "pack.c": {
+    "documented": 1,
+    "total": 3,
+    "percent": 33.3
+   },
+   "unpack.c": {
+    "documented": 1,
+    "total": 3,
+    "percent": 33.3
+   }
+  }
+ },
+ "modules": [
+  {
+   "uid": "aes.c",
+   "path": "modules/aes.c.jsonl",
+   "entities": 24
+  },
+  {
+   "uid": "aes.h",
+   "path": "modules/aes.h.jsonl",
+   "entities": 21
+  },
+  {
+   "uid": "app.py",
+   "path": "modules/app.py.jsonl",
+   "entities": 1
+  },
+  {
+   "uid": "crypter.py",
+   "path": "modules/crypter.py.jsonl",
+   "entities": 4
+  },
+  {
+   "uid": "install.sh",
+   "path": "modules/install.sh.jsonl",
+   "entities": 1
+  },
+  {
+   "uid": "loader.c",
+   "path": "modules/loader.c.jsonl",
+   "entities": 42
+  },
+  {
+   "uid": "loader2.c",
+   "path": "modules/loader2.c.jsonl",
+   "entities": 50
+  },
+  {
+   "uid": "loader3.c",
+   "path": "modules/loader3.c.jsonl",
+   "entities": 50
+  },
+  {
+   "uid": "loader4.c",
+   "path": "modules/loader4.c.jsonl",
+   "entities": 57
+  },
+  {
+   "uid": "loader5.c",
+   "path": "modules/loader5.c.jsonl",
+   "entities": 55
+  },
+  {
+   "uid": "loader6.c",
+   "path": "modules/loader6.c.jsonl",
+   "entities": 55
+  },
+  {
+   "uid": "lz4.c",
+   "path": "modules/lz4.c.jsonl",
+   "entities": 24
+  },
+  {
+   "uid": "lz4.h",
+   "path": "modules/lz4.h.jsonl",
+   "entities": 14
+  },
+  {
+   "uid": "lzss.c",
+   "path": "modules/lzss.c.jsonl",
+   "entities": 8
+  },
+  {
+   "uid": "pack.c",
+   "path": "modules/pack.c.jsonl",
+   "entities": 4
+  },
+  {
+   "uid": "unpack.c",
+   "path": "modules/unpack.c.jsonl",
+   "entities": 4
+  }
+ ],
+ "warnings": {
+  "path": "warnings.jsonl",
+  "total": 323
+ },
+ "usage": [
+  "grep -h '\"name\":\"<Name>\"' readmenator-apidocs/api/modules/*.jsonl",
+  "grep -h '\"qualname\":\"<Owner.method>\"' readmenator-apidocs/api/modules/*.jsonl",
+  "cat readmenator-apidocs/api/modules/<module-slug>.jsonl",
+  "grep -h '\"code\":\"DOC001\"' readmenator-apidocs/api/warnings.jsonl"
+ ]
+}

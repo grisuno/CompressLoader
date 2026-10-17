@@ -1,0 +1,4099 @@
+{
+ "metadata": {
+  "generated_at": "2026-10-17T00:39:05.990041+00:00",
+  "source_tree_hash": "e8071a7f7f079c6b7595896a48293d7d6a9094060dc7fbca590913d72b321822",
+  "repo_name": "CompressLoader",
+  "depth_level": 1,
+  "depth_cap": 3,
+  "file_coverage_summary": {
+   "total_files": 17,
+   "analyzed": 17,
+   "not_analyzed": 0,
+   "not_analyzed_by_reason": {}
+  },
+  "tree_spec": {}
+ },
+ "description": "Static architecture map of 17 files (c, h, py, sh) in 2 components: root: loader5, root: aes. Structure is extracted statically without LLM calls; component prose may be enriched locally.",
+ "files": {
+  "aes.c": {
+   "language": "c",
+   "symbols": 43
+  },
+  "aes.h": {
+   "language": "h",
+   "symbols": 21
+  },
+  "app.py": {
+   "language": "py",
+   "symbols": 0
+  },
+  "crypter.py": {
+   "language": "py",
+   "symbols": 3
+  },
+  "install.sh": {
+   "language": "sh",
+   "symbols": 0
+  },
+  "loader.c": {
+   "language": "c",
+   "symbols": 43
+  },
+  "loader2.c": {
+   "language": "c",
+   "symbols": 53
+  },
+  "loader3.c": {
+   "language": "c",
+   "symbols": 53
+  },
+  "loader4.c": {
+   "language": "c",
+   "symbols": 60
+  },
+  "loader5.c": {
+   "language": "c",
+   "symbols": 65
+  },
+  "loader6.c": {
+   "language": "c",
+   "symbols": 65
+  },
+  "lz4.c": {
+   "language": "c",
+   "symbols": 28
+  },
+  "lz4.h": {
+   "language": "h",
+   "symbols": 13
+  },
+  "lzss.c": {
+   "language": "c",
+   "symbols": 14
+  },
+  "pack.c": {
+   "language": "c",
+   "symbols": 3
+  },
+  "test.c": {
+   "language": "c",
+   "symbols": 3
+  },
+  "unpack.c": {
+   "language": "c",
+   "symbols": 3
+  }
+ },
+ "methods_index": {
+  "aes.c|aes.c::Nb": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Nb",
+   "start_line": 67,
+   "end_line": 69,
+   "type": "FUNCTION",
+   "content_hash": "085a9b250acebc0e"
+  },
+  "aes.c|aes.c::KEYLEN_256": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::KEYLEN_256",
+   "start_line": 9,
+   "end_line": 9,
+   "type": "FUNCTION",
+   "content_hash": "8468ad3985fb307c"
+  },
+  "aes.c|aes.c::RKLENGTH": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::RKLENGTH",
+   "start_line": 10,
+   "end_line": 10,
+   "type": "FUNCTION",
+   "content_hash": "31bcf233d73e4153"
+  },
+  "aes.c|aes.c::BLOCKLEN": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::BLOCKLEN",
+   "start_line": 11,
+   "end_line": 12,
+   "type": "FUNCTION",
+   "content_hash": "360142d2b9dfff58"
+  },
+  "aes.c|aes.c::getSBoxValue": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::getSBoxValue",
+   "start_line": 163,
+   "end_line": 165,
+   "type": "FUNCTION",
+   "content_hash": "a4d79e120aa876cd"
+  },
+  "aes.c|aes.c::getSBoxInvert": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::getSBoxInvert",
+   "start_line": 365,
+   "end_line": 369,
+   "type": "FUNCTION",
+   "content_hash": "d75d3c1456190220"
+  },
+  "aes.c|aes.c::Td0": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Td0",
+   "start_line": 57,
+   "end_line": 57,
+   "type": "FUNCTION",
+   "content_hash": "205aef288de9736e"
+  },
+  "aes.c|aes.c::Td1": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Td1",
+   "start_line": 58,
+   "end_line": 58,
+   "type": "FUNCTION",
+   "content_hash": "baffd87d7e1a48b0"
+  },
+  "aes.c|aes.c::Td2": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Td2",
+   "start_line": 59,
+   "end_line": 59,
+   "type": "FUNCTION",
+   "content_hash": "4975ee6eb138e3a7"
+  },
+  "aes.c|aes.c::Td3": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Td3",
+   "start_line": 60,
+   "end_line": 60,
+   "type": "FUNCTION",
+   "content_hash": "ba4483dd4a1b6dae"
+  },
+  "aes.c|aes.c::Td4": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Td4",
+   "start_line": 61,
+   "end_line": 66,
+   "type": "FUNCTION",
+   "content_hash": "3e9e30024f20cf47"
+  },
+  "aes.c|aes.c::Nk": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Nk",
+   "start_line": 76,
+   "end_line": 76,
+   "type": "FUNCTION",
+   "content_hash": "d9559f49848d35d8"
+  },
+  "aes.c|aes.c::Nr": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Nr",
+   "start_line": 77,
+   "end_line": 83,
+   "type": "FUNCTION",
+   "content_hash": "702f238b2debbb58"
+  },
+  "aes.c|aes.c::MULTIPLY_AS_A_FUNCTION": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::MULTIPLY_AS_A_FUNCTION",
+   "start_line": 84,
+   "end_line": 162,
+   "type": "FUNCTION",
+   "content_hash": "14d32246fd5cb439"
+  },
+  "aes.c|aes.c::KeyExpansion": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::KeyExpansion",
+   "start_line": 166,
+   "end_line": 238,
+   "type": "FUNCTION",
+   "content_hash": "ac86c7585ae491ba"
+  },
+  "aes.c|aes.c::AES_init_ctx": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_init_ctx",
+   "start_line": 239,
+   "end_line": 243,
+   "type": "FUNCTION",
+   "content_hash": "239517b7c23af453"
+  },
+  "aes.c|aes.c::AES_init_ctx_iv": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_init_ctx_iv",
+   "start_line": 244,
+   "end_line": 248,
+   "type": "FUNCTION",
+   "content_hash": "b844a8e77413d2d0"
+  },
+  "aes.c|aes.c::AES_ctx_set_iv": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_ctx_set_iv",
+   "start_line": 249,
+   "end_line": 256,
+   "type": "FUNCTION",
+   "content_hash": "0c844cbb33f453bf"
+  },
+  "aes.c|aes.c::AddRoundKey": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AddRoundKey",
+   "start_line": 257,
+   "end_line": 270,
+   "type": "FUNCTION",
+   "content_hash": "db2365df5966d1f2"
+  },
+  "aes.c|aes.c::SubBytes": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::SubBytes",
+   "start_line": 271,
+   "end_line": 285,
+   "type": "FUNCTION",
+   "content_hash": "bb02938c644265c5"
+  },
+  "aes.c|aes.c::ShiftRows": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::ShiftRows",
+   "start_line": 286,
+   "end_line": 313,
+   "type": "FUNCTION",
+   "content_hash": "3285b731b8ef373d"
+  },
+  "aes.c|aes.c::xtime": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::xtime",
+   "start_line": 314,
+   "end_line": 319,
+   "type": "FUNCTION",
+   "content_hash": "d5cdc186c325ab58"
+  },
+  "aes.c|aes.c::MixColumns": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::MixColumns",
+   "start_line": 320,
+   "end_line": 339,
+   "type": "FUNCTION",
+   "content_hash": "63efce6772954a4c"
+  },
+  "aes.c|aes.c::Multiply": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Multiply",
+   "start_line": 349,
+   "end_line": 364,
+   "type": "FUNCTION",
+   "content_hash": "1b71fe92c815a176"
+  },
+  "aes.c|aes.c::InvMixColumns": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::InvMixColumns",
+   "start_line": 370,
+   "end_line": 390,
+   "type": "FUNCTION",
+   "content_hash": "83dcd067310a54d8"
+  },
+  "aes.c|aes.c::InvSubBytes": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::InvSubBytes",
+   "start_line": 391,
+   "end_line": 402,
+   "type": "FUNCTION",
+   "content_hash": "758091da200d26cd"
+  },
+  "aes.c|aes.c::InvShiftRows": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::InvShiftRows",
+   "start_line": 403,
+   "end_line": 432,
+   "type": "FUNCTION",
+   "content_hash": "450108d11455b1c7"
+  },
+  "aes.c|aes.c::Cipher": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::Cipher",
+   "start_line": 433,
+   "end_line": 458,
+   "type": "FUNCTION",
+   "content_hash": "51db303c4fb8bd6d"
+  },
+  "aes.c|aes.c::InvCipher": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::InvCipher",
+   "start_line": 459,
+   "end_line": 489,
+   "type": "FUNCTION",
+   "content_hash": "bf77e60dce23d685"
+  },
+  "aes.c|aes.c::AES_ECB_encrypt": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_ECB_encrypt",
+   "start_line": 490,
+   "end_line": 495,
+   "type": "FUNCTION",
+   "content_hash": "4ac5ad914885ac30"
+  },
+  "aes.c|aes.c::AES_ECB_decrypt": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_ECB_decrypt",
+   "start_line": 496,
+   "end_line": 511,
+   "type": "FUNCTION",
+   "content_hash": "acc98c72d5acc7dd"
+  },
+  "aes.c|aes.c::XorWithIv": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::XorWithIv",
+   "start_line": 512,
+   "end_line": 520,
+   "type": "FUNCTION",
+   "content_hash": "3a2caf06b0490240"
+  },
+  "aes.c|aes.c::AES_CBC_encrypt_buffer": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_CBC_encrypt_buffer",
+   "start_line": 521,
+   "end_line": 535,
+   "type": "FUNCTION",
+   "content_hash": "4ef51870887bc60a"
+  },
+  "aes.c|aes.c::AES_CBC_decrypt_buffer": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_CBC_decrypt_buffer",
+   "start_line": 536,
+   "end_line": 557,
+   "type": "FUNCTION",
+   "content_hash": "8fb7bdf2c8fcddf3"
+  },
+  "aes.c|aes.c::AES_CTR_xcrypt_buffer": {
+   "file_path": "aes.c",
+   "qualified_name": "aes.c::AES_CTR_xcrypt_buffer",
+   "start_line": 558,
+   "end_line": 592,
+   "type": "FUNCTION",
+   "content_hash": "b3584b9211c8efb1"
+  },
+  "aes.h|aes.h::_AES_H_": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::_AES_H_",
+   "start_line": 2,
+   "end_line": 8,
+   "type": "FUNCTION",
+   "content_hash": "fffd37816b8e8660"
+  },
+  "aes.h|aes.h::CBC": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::CBC",
+   "start_line": 9,
+   "end_line": 11,
+   "type": "FUNCTION",
+   "content_hash": "fc3d2fff78314010"
+  },
+  "aes.h|aes.h::ECB": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::ECB",
+   "start_line": 12,
+   "end_line": 14,
+   "type": "FUNCTION",
+   "content_hash": "2042078fe6ed36dc"
+  },
+  "aes.h|aes.h::CTR": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::CTR",
+   "start_line": 15,
+   "end_line": 17,
+   "type": "FUNCTION",
+   "content_hash": "4a6d6d80cf476227"
+  },
+  "aes.h|aes.h::AES256": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES256",
+   "start_line": 18,
+   "end_line": 19,
+   "type": "FUNCTION",
+   "content_hash": "062bd8f01a647da6"
+  },
+  "aes.h|aes.h::AES_BLOCKLEN": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_BLOCKLEN",
+   "start_line": 20,
+   "end_line": 22,
+   "type": "FUNCTION",
+   "content_hash": "95513907564004fc"
+  },
+  "aes.h|aes.h::AES_KEYLEN": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_KEYLEN",
+   "start_line": 29,
+   "end_line": 29,
+   "type": "FUNCTION",
+   "content_hash": "d710bc7d371f07dc"
+  },
+  "aes.h|aes.h::AES_keyExpSize": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_keyExpSize",
+   "start_line": 30,
+   "end_line": 32,
+   "type": "FUNCTION",
+   "content_hash": "f9cd82d0188e6893"
+  },
+  "aes.h|aes.h::AES_ctx": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_ctx",
+   "start_line": 33,
+   "end_line": 40,
+   "type": "CLASS",
+   "content_hash": "89805f5e11be4ea9"
+  },
+  "aes.h|aes.h::AES_init_ctx": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_init_ctx",
+   "start_line": 41,
+   "end_line": 42,
+   "type": "FUNCTION",
+   "content_hash": "c5e50e2e4be2510e"
+  },
+  "aes.h|aes.h::AES_init_ctx_iv": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_init_ctx_iv",
+   "start_line": 43,
+   "end_line": 43,
+   "type": "FUNCTION",
+   "content_hash": "3d2e8f12c530c478"
+  },
+  "aes.h|aes.h::AES_ctx_set_iv": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_ctx_set_iv",
+   "start_line": 44,
+   "end_line": 47,
+   "type": "FUNCTION",
+   "content_hash": "0be6b57da413f924"
+  },
+  "aes.h|aes.h::AES_ECB_encrypt": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_ECB_encrypt",
+   "start_line": 48,
+   "end_line": 48,
+   "type": "FUNCTION",
+   "content_hash": "7394161fb7a951fb"
+  },
+  "aes.h|aes.h::AES_ECB_decrypt": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_ECB_decrypt",
+   "start_line": 49,
+   "end_line": 52,
+   "type": "FUNCTION",
+   "content_hash": "c32cf90376e68cd8"
+  },
+  "aes.h|aes.h::AES_CBC_encrypt_buffer": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_CBC_encrypt_buffer",
+   "start_line": 53,
+   "end_line": 53,
+   "type": "FUNCTION",
+   "content_hash": "cf9b114b8875e86b"
+  },
+  "aes.h|aes.h::AES_CBC_decrypt_buffer": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_CBC_decrypt_buffer",
+   "start_line": 54,
+   "end_line": 57,
+   "type": "FUNCTION",
+   "content_hash": "fcb9734425ad1ff4"
+  },
+  "aes.h|aes.h::AES_CTR_xcrypt_buffer": {
+   "file_path": "aes.h",
+   "qualified_name": "aes.h::AES_CTR_xcrypt_buffer",
+   "start_line": 58,
+   "end_line": 61,
+   "type": "FUNCTION",
+   "content_hash": "767ad25129b08911"
+  },
+  "crypter.py|crypter.py::AESencrypt": {
+   "file_path": "crypter.py",
+   "qualified_name": "crypter.py::AESencrypt",
+   "start_line": 9,
+   "end_line": 18,
+   "type": "FUNCTION",
+   "content_hash": "02247ec6302f9c7d"
+  },
+  "crypter.py|crypter.py::change_ext": {
+   "file_path": "crypter.py",
+   "qualified_name": "crypter.py::change_ext",
+   "start_line": 19,
+   "end_line": 23,
+   "type": "FUNCTION",
+   "content_hash": "fae4abd686bbb339"
+  },
+  "crypter.py|crypter.py::main": {
+   "file_path": "crypter.py",
+   "qualified_name": "crypter.py::main",
+   "start_line": 24,
+   "end_line": 98,
+   "type": "FUNCTION",
+   "content_hash": "fe0002e838d72228"
+  },
+  "loader.c|loader.c::_CRT_RAND_S": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::_CRT_RAND_S",
+   "start_line": 19,
+   "end_line": 29,
+   "type": "FUNCTION",
+   "content_hash": "a7bd39e6482831df"
+  },
+  "loader.c|loader.c::NT_SUCCESS": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::NT_SUCCESS",
+   "start_line": 30,
+   "end_line": 32,
+   "type": "FUNCTION",
+   "content_hash": "49907bacbf009684"
+  },
+  "loader.c|loader.c::NtCurrentThread": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::NtCurrentThread",
+   "start_line": 33,
+   "end_line": 33,
+   "type": "FUNCTION",
+   "content_hash": "61caf9e9d1cacac9"
+  },
+  "loader.c|loader.c::NtCurrentProcess": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::NtCurrentProcess",
+   "start_line": 34,
+   "end_line": 36,
+   "type": "FUNCTION",
+   "content_hash": "13d928002b833cca"
+  },
+  "loader.c|loader.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 37,
+   "end_line": 37,
+   "type": "FUNCTION",
+   "content_hash": "bec1badceccbe1d4"
+  },
+  "loader.c|loader.c::NTSTATUS": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::NTSTATUS",
+   "start_line": 38,
+   "end_line": 39,
+   "type": "FUNCTION",
+   "content_hash": "d061e695cbb8d3e0"
+  },
+  "loader.c|loader.c::12": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::12",
+   "start_line": 40,
+   "end_line": 40,
+   "type": "FUNCTION",
+   "content_hash": "c0779072d389796d"
+  },
+  "loader.c|loader.c::_BASE_RELOCATION_ENTRY": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::_BASE_RELOCATION_ENTRY",
+   "start_line": 41,
+   "end_line": 45,
+   "type": "CLASS",
+   "content_hash": "71ba8460833dd2c7"
+  },
+  "loader.c|loader.c::DATA": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::DATA",
+   "start_line": 46,
+   "end_line": 51,
+   "type": "CLASS",
+   "content_hash": "24f39be4f09c2bc1"
+  },
+  "loader.c|loader.c::EI": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::EI",
+   "start_line": 52,
+   "end_line": 52,
+   "type": "FUNCTION",
+   "content_hash": "1587f345aebfa660"
+  },
+  "loader.c|loader.c::EJ": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::EJ",
+   "start_line": 53,
+   "end_line": 53,
+   "type": "FUNCTION",
+   "content_hash": "945a38bf452db752"
+  },
+  "loader.c|loader.c::P": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::P",
+   "start_line": 54,
+   "end_line": 54,
+   "type": "FUNCTION",
+   "content_hash": "b084d0057cb70815"
+  },
+  "loader.c|loader.c::N": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::N",
+   "start_line": 55,
+   "end_line": 55,
+   "type": "FUNCTION",
+   "content_hash": "c1af8cbc59c49ee1"
+  },
+  "loader.c|loader.c::F": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::F",
+   "start_line": 56,
+   "end_line": 57,
+   "type": "FUNCTION",
+   "content_hash": "5557905ed8ea4ee4"
+  },
+  "loader.c|loader.c::BitReader": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::BitReader",
+   "start_line": 58,
+   "end_line": 63,
+   "type": "CLASS",
+   "content_hash": "4c7ffb90082723c1"
+  },
+  "loader.c|loader.c::read_bit": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::read_bit",
+   "start_line": 64,
+   "end_line": 74,
+   "type": "FUNCTION",
+   "content_hash": "f4975a1150fc7835"
+  },
+  "loader.c|loader.c::read_bits": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::read_bits",
+   "start_line": 75,
+   "end_line": 84,
+   "type": "FUNCTION",
+   "content_hash": "1aef0c5d2fac91ad"
+  },
+  "loader.c|loader.c::lzss_decode_mem": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::lzss_decode_mem",
+   "start_line": 85,
+   "end_line": 216,
+   "type": "FUNCTION",
+   "content_hash": "d5bacf1cbfa45b4f"
+  },
+  "loader.c|loader.c::hookGetCommandLineW": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hookGetCommandLineW",
+   "start_line": 217,
+   "end_line": 217,
+   "type": "FUNCTION",
+   "content_hash": "74f5c0458c8118fd"
+  },
+  "loader.c|loader.c::hookGetCommandLineA": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hookGetCommandLineA",
+   "start_line": 218,
+   "end_line": 218,
+   "type": "FUNCTION",
+   "content_hash": "fcd72a297dd4b6db"
+  },
+  "loader.c|loader.c::hook__p___argv": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hook__p___argv",
+   "start_line": 219,
+   "end_line": 219,
+   "type": "FUNCTION",
+   "content_hash": "3c8a8503b1ddf525"
+  },
+  "loader.c|loader.c::hook__p___wargv": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hook__p___wargv",
+   "start_line": 220,
+   "end_line": 220,
+   "type": "FUNCTION",
+   "content_hash": "681de97aad3766f5"
+  },
+  "loader.c|loader.c::hook__p___argc": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hook__p___argc",
+   "start_line": 221,
+   "end_line": 225,
+   "type": "FUNCTION",
+   "content_hash": "b81afa2f809f7671"
+  },
+  "loader.c|loader.c::anti_analysis": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::anti_analysis",
+   "start_line": 226,
+   "end_line": 250,
+   "type": "FUNCTION",
+   "content_hash": "5b48f7204ebbf5b3"
+  },
+  "loader.c|loader.c::selfDestruct": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::selfDestruct",
+   "start_line": 251,
+   "end_line": 306,
+   "type": "FUNCTION",
+   "content_hash": "37fcc52a136ee5be"
+  },
+  "loader.c|loader.c::hook__wgetmainargs": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hook__wgetmainargs",
+   "start_line": 307,
+   "end_line": 312,
+   "type": "FUNCTION",
+   "content_hash": "a66526cd60242bf4"
+  },
+  "loader.c|loader.c::hook__getmainargs": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hook__getmainargs",
+   "start_line": 313,
+   "end_line": 318,
+   "type": "FUNCTION",
+   "content_hash": "fff7f889982aaa20"
+  },
+  "loader.c|loader.c::hookexit": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hookexit",
+   "start_line": 319,
+   "end_line": 323,
+   "type": "FUNCTION",
+   "content_hash": "371fffd7dfdfdd21"
+  },
+  "loader.c|loader.c::hookExitProcess": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::hookExitProcess",
+   "start_line": 324,
+   "end_line": 327,
+   "type": "FUNCTION",
+   "content_hash": "792a585aa20a789d"
+  },
+  "loader.c|loader.c::masqueradeCmdline": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::masqueradeCmdline",
+   "start_line": 328,
+   "end_line": 365,
+   "type": "FUNCTION",
+   "content_hash": "ee6ff3fd7d17c509"
+  },
+  "loader.c|loader.c::freeargvA": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::freeargvA",
+   "start_line": 366,
+   "end_line": 373,
+   "type": "FUNCTION",
+   "content_hash": "8e98d93285efd1f4"
+  },
+  "loader.c|loader.c::freeargvW": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::freeargvW",
+   "start_line": 374,
+   "end_line": 381,
+   "type": "FUNCTION",
+   "content_hash": "5b029f484fcd0065"
+  },
+  "loader.c|loader.c::GetNTHeaders": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::GetNTHeaders",
+   "start_line": 382,
+   "end_line": 393,
+   "type": "FUNCTION",
+   "content_hash": "f605f64b7653af70"
+  },
+  "loader.c|loader.c::GetPEDirectory": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::GetPEDirectory",
+   "start_line": 394,
+   "end_line": 403,
+   "type": "FUNCTION",
+   "content_hash": "828103ceee142e61"
+  },
+  "loader.c|loader.c::RepairIAT": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::RepairIAT",
+   "start_line": 404,
+   "end_line": 457,
+   "type": "FUNCTION",
+   "content_hash": "63fd500358ac3259"
+  },
+  "loader.c|loader.c::_stricmp": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::_stricmp",
+   "start_line": 458,
+   "end_line": 478,
+   "type": "FUNCTION",
+   "content_hash": "e0ec6878688f34fd"
+  },
+  "loader.c|loader.c::RunPE": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::RunPE",
+   "start_line": 479,
+   "end_line": 484,
+   "type": "FUNCTION",
+   "content_hash": "788fca8c960b384d"
+  },
+  "loader.c|loader.c::PELoader": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::PELoader",
+   "start_line": 485,
+   "end_line": 558,
+   "type": "FUNCTION",
+   "content_hash": "0abd7365c420a4bf"
+  },
+  "loader.c|loader.c::getNtdll": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::getNtdll",
+   "start_line": 559,
+   "end_line": 601,
+   "type": "FUNCTION",
+   "content_hash": "8a472326e2520d2f"
+  },
+  "loader.c|loader.c::Unhook": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::Unhook",
+   "start_line": 602,
+   "end_line": 637,
+   "type": "FUNCTION",
+   "content_hash": "e19ac5f8e6ede096"
+  },
+  "loader.c|loader.c::DecryptAES": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::DecryptAES",
+   "start_line": 638,
+   "end_line": 670,
+   "type": "FUNCTION",
+   "content_hash": "688bd0f7a83cee7b"
+  },
+  "loader.c|loader.c::GetData": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::GetData",
+   "start_line": 671,
+   "end_line": 791,
+   "type": "FUNCTION",
+   "content_hash": "7cff9f5907bd2eee"
+  },
+  "loader.c|loader.c::main": {
+   "file_path": "loader.c",
+   "qualified_name": "loader.c::main",
+   "start_line": 792,
+   "end_line": 867,
+   "type": "FUNCTION",
+   "content_hash": "7fd5bbea0948d847"
+  },
+  "loader2.c|loader2.c::_CRT_RAND_S": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::_CRT_RAND_S",
+   "start_line": 1,
+   "end_line": 1,
+   "type": "FUNCTION",
+   "content_hash": "e28a5998d4ccada7"
+  },
+  "loader2.c|loader2.c::WIN32_LEAN_AND_MEAN": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::WIN32_LEAN_AND_MEAN",
+   "start_line": 35,
+   "end_line": 35,
+   "type": "FUNCTION",
+   "content_hash": "b033a3977b133ca1"
+  },
+  "loader2.c|loader2.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 26,
+   "end_line": 28,
+   "type": "FUNCTION",
+   "content_hash": "bf52809669d69bfd"
+  },
+  "loader2.c|loader2.c::NT_SUCCESS": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::NT_SUCCESS",
+   "start_line": 29,
+   "end_line": 31,
+   "type": "FUNCTION",
+   "content_hash": "f9e62d6a6858777f"
+  },
+  "loader2.c|loader2.c::NtCurrentThread": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::NtCurrentThread",
+   "start_line": 32,
+   "end_line": 32,
+   "type": "FUNCTION",
+   "content_hash": "28af0fe733a6dea1"
+  },
+  "loader2.c|loader2.c::NtCurrentProcess": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::NtCurrentProcess",
+   "start_line": 33,
+   "end_line": 34,
+   "type": "FUNCTION",
+   "content_hash": "008e7ae5daa4502d"
+  },
+  "loader2.c|loader2.c::UNICODE": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::UNICODE",
+   "start_line": 36,
+   "end_line": 36,
+   "type": "FUNCTION",
+   "content_hash": "6ffbf2ad5448e708"
+  },
+  "loader2.c|loader2.c::_UNICODE": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::_UNICODE",
+   "start_line": 37,
+   "end_line": 39,
+   "type": "FUNCTION",
+   "content_hash": "1c2ae5e62ef1d477"
+  },
+  "loader2.c|loader2.c::EI": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::EI",
+   "start_line": 40,
+   "end_line": 40,
+   "type": "FUNCTION",
+   "content_hash": "5010ee096ea89b64"
+  },
+  "loader2.c|loader2.c::EJ": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::EJ",
+   "start_line": 41,
+   "end_line": 41,
+   "type": "FUNCTION",
+   "content_hash": "eed61a29446e17d7"
+  },
+  "loader2.c|loader2.c::P": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::P",
+   "start_line": 42,
+   "end_line": 42,
+   "type": "FUNCTION",
+   "content_hash": "bd69e5e681db895a"
+  },
+  "loader2.c|loader2.c::N": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::N",
+   "start_line": 43,
+   "end_line": 43,
+   "type": "FUNCTION",
+   "content_hash": "e6858f26dcae21e0"
+  },
+  "loader2.c|loader2.c::F": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::F",
+   "start_line": 44,
+   "end_line": 45,
+   "type": "FUNCTION",
+   "content_hash": "7ea56311d8d91db0"
+  },
+  "loader2.c|loader2.c::BitReader": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::BitReader",
+   "start_line": 46,
+   "end_line": 51,
+   "type": "CLASS",
+   "content_hash": "33efddf1117a82de"
+  },
+  "loader2.c|loader2.c::read_bit": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::read_bit",
+   "start_line": 52,
+   "end_line": 60,
+   "type": "FUNCTION",
+   "content_hash": "30fcfe4b9c028ba6"
+  },
+  "loader2.c|loader2.c::read_bits": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::read_bits",
+   "start_line": 61,
+   "end_line": 70,
+   "type": "FUNCTION",
+   "content_hash": "34b91ba0a3d05cbd"
+  },
+  "loader2.c|loader2.c::DecryptAES": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::DecryptAES",
+   "start_line": 71,
+   "end_line": 99,
+   "type": "FUNCTION",
+   "content_hash": "f999789672f27e68"
+  },
+  "loader2.c|loader2.c::UPTR": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::UPTR",
+   "start_line": 102,
+   "end_line": 110,
+   "type": "FUNCTION",
+   "content_hash": "0529c3780da3c37d"
+  },
+  "loader2.c|loader2.c::FluctuationMetadata": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::FluctuationMetadata",
+   "start_line": 111,
+   "end_line": 118,
+   "type": "CLASS",
+   "content_hash": "733d2e730a9fa1c5"
+  },
+  "loader2.c|loader2.c::HookTrampolineBuffers": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::HookTrampolineBuffers",
+   "start_line": 119,
+   "end_line": 128,
+   "type": "CLASS",
+   "content_hash": "0a9659e99fd6009d"
+  },
+  "loader2.c|loader2.c::HookedSleep": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::HookedSleep",
+   "start_line": 129,
+   "end_line": 133,
+   "type": "CLASS",
+   "content_hash": "3f92ba9b263d8add"
+  },
+  "loader2.c|loader2.c::DATA": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::DATA",
+   "start_line": 134,
+   "end_line": 153,
+   "type": "CLASS",
+   "content_hash": "5108e62b150f1b70"
+  },
+  "loader2.c|loader2.c::log": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::log",
+   "start_line": 154,
+   "end_line": 168,
+   "type": "FUNCTION",
+   "content_hash": "b200eb3a6eb09198"
+  },
+  "loader2.c|loader2.c::freeargvA": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::freeargvA",
+   "start_line": 169,
+   "end_line": 169,
+   "type": "FUNCTION",
+   "content_hash": "9081edeea0b76058"
+  },
+  "loader2.c|loader2.c::freeargvW": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::freeargvW",
+   "start_line": 170,
+   "end_line": 182,
+   "type": "FUNCTION",
+   "content_hash": "4a78bab3feaee1f1"
+  },
+  "loader2.c|loader2.c::get_return_address": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::get_return_address",
+   "start_line": 183,
+   "end_line": 186,
+   "type": "FUNCTION",
+   "content_hash": "46288bbaeeb2b67f"
+  },
+  "loader2.c|loader2.c::xor32": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::xor32",
+   "start_line": 187,
+   "end_line": 194,
+   "type": "FUNCTION",
+   "content_hash": "9984d8b2223693e5"
+  },
+  "loader2.c|loader2.c::isShellcodeThread": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::isShellcodeThread",
+   "start_line": 195,
+   "end_line": 205,
+   "type": "FUNCTION",
+   "content_hash": "3360f96a86ad8788"
+  },
+  "loader2.c|loader2.c::shellcodeEncryptDecrypt": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::shellcodeEncryptDecrypt",
+   "start_line": 206,
+   "end_line": 245,
+   "type": "FUNCTION",
+   "content_hash": "8111ef02978be19f"
+  },
+  "loader2.c|loader2.c::MySleep": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::MySleep",
+   "start_line": 246,
+   "end_line": 261,
+   "type": "FUNCTION",
+   "content_hash": "08e207b8479ab796"
+  },
+  "loader2.c|loader2.c::fastTrampoline": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::fastTrampoline",
+   "start_line": 262,
+   "end_line": 302,
+   "type": "FUNCTION",
+   "content_hash": "2718bf39e0ddd0c1"
+  },
+  "loader2.c|loader2.c::VEHHandler": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::VEHHandler",
+   "start_line": 303,
+   "end_line": 323,
+   "type": "FUNCTION",
+   "content_hash": "d37ea5117d5faea3"
+  },
+  "loader2.c|loader2.c::lzss_decode_mem": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::lzss_decode_mem",
+   "start_line": 324,
+   "end_line": 387,
+   "type": "FUNCTION",
+   "content_hash": "73535ff899d86b4a"
+  },
+  "loader2.c|loader2.c::masqueradeCmdline": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::masqueradeCmdline",
+   "start_line": 388,
+   "end_line": 418,
+   "type": "FUNCTION",
+   "content_hash": "a69a57f79fcf5f6d"
+  },
+  "loader2.c|loader2.c::GetNTHeaders": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::GetNTHeaders",
+   "start_line": 419,
+   "end_line": 429,
+   "type": "FUNCTION",
+   "content_hash": "b69acd9c45996a45"
+  },
+  "loader2.c|loader2.c::GetPEDirectory": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::GetPEDirectory",
+   "start_line": 430,
+   "end_line": 438,
+   "type": "FUNCTION",
+   "content_hash": "592ca7c2548b54b0"
+  },
+  "loader2.c|loader2.c::RepairIAT": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::RepairIAT",
+   "start_line": 439,
+   "end_line": 489,
+   "type": "FUNCTION",
+   "content_hash": "78b450a8539297a8"
+  },
+  "loader2.c|loader2.c::hookGetCommandLineA": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hookGetCommandLineA",
+   "start_line": 490,
+   "end_line": 490,
+   "type": "FUNCTION",
+   "content_hash": "f42e16a6a9f7bfd3"
+  },
+  "loader2.c|loader2.c::hookGetCommandLineW": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hookGetCommandLineW",
+   "start_line": 491,
+   "end_line": 491,
+   "type": "FUNCTION",
+   "content_hash": "8fe3270743472e25"
+  },
+  "loader2.c|loader2.c::hook__p___argv": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hook__p___argv",
+   "start_line": 492,
+   "end_line": 492,
+   "type": "FUNCTION",
+   "content_hash": "e46d03f4ae7b015a"
+  },
+  "loader2.c|loader2.c::hook__p___wargv": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hook__p___wargv",
+   "start_line": 493,
+   "end_line": 493,
+   "type": "FUNCTION",
+   "content_hash": "10e32fe155bee886"
+  },
+  "loader2.c|loader2.c::hook__p___argc": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hook__p___argc",
+   "start_line": 494,
+   "end_line": 494,
+   "type": "FUNCTION",
+   "content_hash": "0b8a547679c07134"
+  },
+  "loader2.c|loader2.c::hook__getmainargs": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hook__getmainargs",
+   "start_line": 495,
+   "end_line": 497,
+   "type": "FUNCTION",
+   "content_hash": "212b05284bc1249a"
+  },
+  "loader2.c|loader2.c::hook__wgetmainargs": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hook__wgetmainargs",
+   "start_line": 498,
+   "end_line": 500,
+   "type": "FUNCTION",
+   "content_hash": "bd5d0eab5928a669"
+  },
+  "loader2.c|loader2.c::hookExitProcess": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::hookExitProcess",
+   "start_line": 501,
+   "end_line": 502,
+   "type": "FUNCTION",
+   "content_hash": "e2f377fa77ceff87"
+  },
+  "loader2.c|loader2.c::RunPE": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::RunPE",
+   "start_line": 503,
+   "end_line": 508,
+   "type": "FUNCTION",
+   "content_hash": "f170df0b531f0e71"
+  },
+  "loader2.c|loader2.c::PELoader": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::PELoader",
+   "start_line": 509,
+   "end_line": 596,
+   "type": "FUNCTION",
+   "content_hash": "73b87c36f249c879"
+  },
+  "loader2.c|loader2.c::anti_analysis": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::anti_analysis",
+   "start_line": 597,
+   "end_line": 617,
+   "type": "FUNCTION",
+   "content_hash": "12c2df7821beb097"
+  },
+  "loader2.c|loader2.c::selfDestruct": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::selfDestruct",
+   "start_line": 618,
+   "end_line": 646,
+   "type": "FUNCTION",
+   "content_hash": "141b41e09784a89d"
+  },
+  "loader2.c|loader2.c::GetData": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::GetData",
+   "start_line": 647,
+   "end_line": 731,
+   "type": "FUNCTION",
+   "content_hash": "128f6109ca752bc4"
+  },
+  "loader2.c|loader2.c::main": {
+   "file_path": "loader2.c",
+   "qualified_name": "loader2.c::main",
+   "start_line": 732,
+   "end_line": 822,
+   "type": "FUNCTION",
+   "content_hash": "cce5b6b7bff5e578"
+  },
+  "loader3.c|loader3.c::_CRT_RAND_S": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::_CRT_RAND_S",
+   "start_line": 16,
+   "end_line": 16,
+   "type": "FUNCTION",
+   "content_hash": "2dcb56efac8d5630"
+  },
+  "loader3.c|loader3.c::WIN32_LEAN_AND_MEAN": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::WIN32_LEAN_AND_MEAN",
+   "start_line": 17,
+   "end_line": 41,
+   "type": "FUNCTION",
+   "content_hash": "01652020bfda8d9a"
+  },
+  "loader3.c|loader3.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 42,
+   "end_line": 44,
+   "type": "FUNCTION",
+   "content_hash": "b7deeb5f8d3380a5"
+  },
+  "loader3.c|loader3.c::NT_SUCCESS": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::NT_SUCCESS",
+   "start_line": 45,
+   "end_line": 47,
+   "type": "FUNCTION",
+   "content_hash": "c0117e9869dd79f3"
+  },
+  "loader3.c|loader3.c::NtCurrentThread": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::NtCurrentThread",
+   "start_line": 48,
+   "end_line": 48,
+   "type": "FUNCTION",
+   "content_hash": "034ff02518835932"
+  },
+  "loader3.c|loader3.c::NtCurrentProcess": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::NtCurrentProcess",
+   "start_line": 49,
+   "end_line": 51,
+   "type": "FUNCTION",
+   "content_hash": "ec745639a89ae02d"
+  },
+  "loader3.c|loader3.c::EI": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::EI",
+   "start_line": 52,
+   "end_line": 52,
+   "type": "FUNCTION",
+   "content_hash": "fa536f69c7755f34"
+  },
+  "loader3.c|loader3.c::EJ": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::EJ",
+   "start_line": 53,
+   "end_line": 53,
+   "type": "FUNCTION",
+   "content_hash": "64012a4b6ff5b26e"
+  },
+  "loader3.c|loader3.c::P": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::P",
+   "start_line": 54,
+   "end_line": 54,
+   "type": "FUNCTION",
+   "content_hash": "13becb12777af7dd"
+  },
+  "loader3.c|loader3.c::N": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::N",
+   "start_line": 55,
+   "end_line": 55,
+   "type": "FUNCTION",
+   "content_hash": "4197927a4ea4a7cd"
+  },
+  "loader3.c|loader3.c::F": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::F",
+   "start_line": 56,
+   "end_line": 57,
+   "type": "FUNCTION",
+   "content_hash": "83fa6ad60eb198bc"
+  },
+  "loader3.c|loader3.c::BitReader": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::BitReader",
+   "start_line": 58,
+   "end_line": 63,
+   "type": "CLASS",
+   "content_hash": "20f6c24154bf5afc"
+  },
+  "loader3.c|loader3.c::read_bit": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::read_bit",
+   "start_line": 64,
+   "end_line": 72,
+   "type": "FUNCTION",
+   "content_hash": "7bd107092277fa5f"
+  },
+  "loader3.c|loader3.c::read_bits": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::read_bits",
+   "start_line": 73,
+   "end_line": 82,
+   "type": "FUNCTION",
+   "content_hash": "caf197cdad88f0a6"
+  },
+  "loader3.c|loader3.c::lzss_decode_mem": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::lzss_decode_mem",
+   "start_line": 83,
+   "end_line": 138,
+   "type": "FUNCTION",
+   "content_hash": "52f1b8e14c50c698"
+  },
+  "loader3.c|loader3.c::DecryptAES": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::DecryptAES",
+   "start_line": 139,
+   "end_line": 162,
+   "type": "FUNCTION",
+   "content_hash": "e6e974f38f6399cd"
+  },
+  "loader3.c|loader3.c::UPTR": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::UPTR",
+   "start_line": 165,
+   "end_line": 173,
+   "type": "FUNCTION",
+   "content_hash": "2d2fce79c46230c6"
+  },
+  "loader3.c|loader3.c::FluctuationMetadata": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::FluctuationMetadata",
+   "start_line": 174,
+   "end_line": 181,
+   "type": "CLASS",
+   "content_hash": "078b3d66d4dafec2"
+  },
+  "loader3.c|loader3.c::HookTrampolineBuffers": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::HookTrampolineBuffers",
+   "start_line": 182,
+   "end_line": 191,
+   "type": "CLASS",
+   "content_hash": "36510ecef5467dd4"
+  },
+  "loader3.c|loader3.c::HookedSleep": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::HookedSleep",
+   "start_line": 192,
+   "end_line": 196,
+   "type": "CLASS",
+   "content_hash": "2c52f089bae9ea0e"
+  },
+  "loader3.c|loader3.c::DATA": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::DATA",
+   "start_line": 197,
+   "end_line": 213,
+   "type": "CLASS",
+   "content_hash": "391a083ccda38ae8"
+  },
+  "loader3.c|loader3.c::log": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::log",
+   "start_line": 214,
+   "end_line": 237,
+   "type": "FUNCTION",
+   "content_hash": "fb6e32050e6eaf86"
+  },
+  "loader3.c|loader3.c::get_return_address": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::get_return_address",
+   "start_line": 238,
+   "end_line": 241,
+   "type": "FUNCTION",
+   "content_hash": "d594ef6105a33079"
+  },
+  "loader3.c|loader3.c::xor32": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::xor32",
+   "start_line": 242,
+   "end_line": 248,
+   "type": "FUNCTION",
+   "content_hash": "2633e286d3d316a5"
+  },
+  "loader3.c|loader3.c::isShellcodeThread": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::isShellcodeThread",
+   "start_line": 249,
+   "end_line": 257,
+   "type": "FUNCTION",
+   "content_hash": "4e993b692862f6f0"
+  },
+  "loader3.c|loader3.c::shellcodeEncryptDecrypt": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::shellcodeEncryptDecrypt",
+   "start_line": 258,
+   "end_line": 291,
+   "type": "FUNCTION",
+   "content_hash": "ae2be3347fa01aa1"
+  },
+  "loader3.c|loader3.c::MySleep": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::MySleep",
+   "start_line": 292,
+   "end_line": 305,
+   "type": "FUNCTION",
+   "content_hash": "88e4fedb6629ab76"
+  },
+  "loader3.c|loader3.c::fastTrampoline": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::fastTrampoline",
+   "start_line": 306,
+   "end_line": 341,
+   "type": "FUNCTION",
+   "content_hash": "f86e8eb8d741cc36"
+  },
+  "loader3.c|loader3.c::VEHHandler": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::VEHHandler",
+   "start_line": 342,
+   "end_line": 359,
+   "type": "FUNCTION",
+   "content_hash": "08ea76f6b6618193"
+  },
+  "loader3.c|loader3.c::masqueradeCmdline": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::masqueradeCmdline",
+   "start_line": 360,
+   "end_line": 389,
+   "type": "FUNCTION",
+   "content_hash": "d5065d360b9394d6"
+  },
+  "loader3.c|loader3.c::freeargvA": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::freeargvA",
+   "start_line": 390,
+   "end_line": 397,
+   "type": "FUNCTION",
+   "content_hash": "0436e24dfad74726"
+  },
+  "loader3.c|loader3.c::freeargvW": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::freeargvW",
+   "start_line": 398,
+   "end_line": 405,
+   "type": "FUNCTION",
+   "content_hash": "f18059df9c67cf40"
+  },
+  "loader3.c|loader3.c::GetNTHeaders": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::GetNTHeaders",
+   "start_line": 406,
+   "end_line": 416,
+   "type": "FUNCTION",
+   "content_hash": "ca032fbe8de801b8"
+  },
+  "loader3.c|loader3.c::GetPEDirectory": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::GetPEDirectory",
+   "start_line": 417,
+   "end_line": 425,
+   "type": "FUNCTION",
+   "content_hash": "1a7cd3da4e017deb"
+  },
+  "loader3.c|loader3.c::RepairIAT": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::RepairIAT",
+   "start_line": 426,
+   "end_line": 477,
+   "type": "FUNCTION",
+   "content_hash": "6fdb99b095532fd2"
+  },
+  "loader3.c|loader3.c::hookGetCommandLineA": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hookGetCommandLineA",
+   "start_line": 478,
+   "end_line": 478,
+   "type": "FUNCTION",
+   "content_hash": "9234b3d7b510495e"
+  },
+  "loader3.c|loader3.c::hookGetCommandLineW": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hookGetCommandLineW",
+   "start_line": 479,
+   "end_line": 479,
+   "type": "FUNCTION",
+   "content_hash": "e4226c482cda22ed"
+  },
+  "loader3.c|loader3.c::hook__p___argv": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hook__p___argv",
+   "start_line": 480,
+   "end_line": 480,
+   "type": "FUNCTION",
+   "content_hash": "58ece070679bb076"
+  },
+  "loader3.c|loader3.c::hook__p___wargv": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hook__p___wargv",
+   "start_line": 481,
+   "end_line": 481,
+   "type": "FUNCTION",
+   "content_hash": "10a3fd80a8f1b212"
+  },
+  "loader3.c|loader3.c::hook__p___argc": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hook__p___argc",
+   "start_line": 482,
+   "end_line": 482,
+   "type": "FUNCTION",
+   "content_hash": "7f4df939a1ae54f4"
+  },
+  "loader3.c|loader3.c::hook__getmainargs": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hook__getmainargs",
+   "start_line": 483,
+   "end_line": 485,
+   "type": "FUNCTION",
+   "content_hash": "b332008219e81074"
+  },
+  "loader3.c|loader3.c::hook__wgetmainargs": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hook__wgetmainargs",
+   "start_line": 486,
+   "end_line": 488,
+   "type": "FUNCTION",
+   "content_hash": "646f51cf3277aba8"
+  },
+  "loader3.c|loader3.c::hookexit": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hookexit",
+   "start_line": 489,
+   "end_line": 492,
+   "type": "FUNCTION",
+   "content_hash": "1cf5dc34d01b272f"
+  },
+  "loader3.c|loader3.c::hookExitProcess": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::hookExitProcess",
+   "start_line": 493,
+   "end_line": 496,
+   "type": "FUNCTION",
+   "content_hash": "f945ea7c27da0362"
+  },
+  "loader3.c|loader3.c::RunPE": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::RunPE",
+   "start_line": 497,
+   "end_line": 502,
+   "type": "FUNCTION",
+   "content_hash": "1baec549534c0ce0"
+  },
+  "loader3.c|loader3.c::PELoader": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::PELoader",
+   "start_line": 503,
+   "end_line": 580,
+   "type": "FUNCTION",
+   "content_hash": "efd55ef08d1a3c9a"
+  },
+  "loader3.c|loader3.c::anti_analysis": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::anti_analysis",
+   "start_line": 581,
+   "end_line": 601,
+   "type": "FUNCTION",
+   "content_hash": "06b4204a6581b7e0"
+  },
+  "loader3.c|loader3.c::selfDestruct": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::selfDestruct",
+   "start_line": 602,
+   "end_line": 628,
+   "type": "FUNCTION",
+   "content_hash": "8a6e285cb755f1df"
+  },
+  "loader3.c|loader3.c::getNtdll": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::getNtdll",
+   "start_line": 629,
+   "end_line": 664,
+   "type": "FUNCTION",
+   "content_hash": "5bd24dc3bba616c2"
+  },
+  "loader3.c|loader3.c::Unhook": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::Unhook",
+   "start_line": 665,
+   "end_line": 688,
+   "type": "FUNCTION",
+   "content_hash": "b33f173e3981dc2d"
+  },
+  "loader3.c|loader3.c::GetData": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::GetData",
+   "start_line": 689,
+   "end_line": 756,
+   "type": "FUNCTION",
+   "content_hash": "13ec118bf5c35832"
+  },
+  "loader3.c|loader3.c::main": {
+   "file_path": "loader3.c",
+   "qualified_name": "loader3.c::main",
+   "start_line": 757,
+   "end_line": 862,
+   "type": "FUNCTION",
+   "content_hash": "1312a743bd34ae5e"
+  },
+  "loader4.c|loader4.c::_CRT_RAND_S": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::_CRT_RAND_S",
+   "start_line": 16,
+   "end_line": 16,
+   "type": "FUNCTION",
+   "content_hash": "c6d348f4085fe7aa"
+  },
+  "loader4.c|loader4.c::WIN32_LEAN_AND_MEAN": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::WIN32_LEAN_AND_MEAN",
+   "start_line": 17,
+   "end_line": 41,
+   "type": "FUNCTION",
+   "content_hash": "f324fc056c1cb1d1"
+  },
+  "loader4.c|loader4.c::XK": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::XK",
+   "start_line": 42,
+   "end_line": 51,
+   "type": "FUNCTION",
+   "content_hash": "b3958cbb6af56382"
+  },
+  "loader4.c|loader4.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 52,
+   "end_line": 54,
+   "type": "FUNCTION",
+   "content_hash": "de9fef3e347b31b2"
+  },
+  "loader4.c|loader4.c::NT_SUCCESS": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::NT_SUCCESS",
+   "start_line": 55,
+   "end_line": 57,
+   "type": "FUNCTION",
+   "content_hash": "128ffd0466669839"
+  },
+  "loader4.c|loader4.c::NtCurrentThread": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::NtCurrentThread",
+   "start_line": 58,
+   "end_line": 58,
+   "type": "FUNCTION",
+   "content_hash": "2825b82bed4a9260"
+  },
+  "loader4.c|loader4.c::NtCurrentProcess": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::NtCurrentProcess",
+   "start_line": 59,
+   "end_line": 61,
+   "type": "FUNCTION",
+   "content_hash": "dbab434ff9172be2"
+  },
+  "loader4.c|loader4.c::EI": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::EI",
+   "start_line": 62,
+   "end_line": 62,
+   "type": "FUNCTION",
+   "content_hash": "10c355b500933211"
+  },
+  "loader4.c|loader4.c::EJ": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::EJ",
+   "start_line": 63,
+   "end_line": 63,
+   "type": "FUNCTION",
+   "content_hash": "2508e054c4e8954b"
+  },
+  "loader4.c|loader4.c::P": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::P",
+   "start_line": 64,
+   "end_line": 64,
+   "type": "FUNCTION",
+   "content_hash": "fff80606f3561cac"
+  },
+  "loader4.c|loader4.c::N": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::N",
+   "start_line": 65,
+   "end_line": 65,
+   "type": "FUNCTION",
+   "content_hash": "57fa181bf800143b"
+  },
+  "loader4.c|loader4.c::F": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::F",
+   "start_line": 66,
+   "end_line": 68,
+   "type": "FUNCTION",
+   "content_hash": "bbbe6481e0d0d59f"
+  },
+  "loader4.c|loader4.c::OBFUSCATE_KEY": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::OBFUSCATE_KEY",
+   "start_line": 69,
+   "end_line": 71,
+   "type": "FUNCTION",
+   "content_hash": "3d8658f9a26e4991"
+  },
+  "loader4.c|loader4.c::OBFSTR": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::OBFSTR",
+   "start_line": 72,
+   "end_line": 84,
+   "type": "FUNCTION",
+   "content_hash": "4c880f9507ba77c4"
+  },
+  "loader4.c|loader4.c::OBFSTRW": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::OBFSTRW",
+   "start_line": 85,
+   "end_line": 97,
+   "type": "FUNCTION",
+   "content_hash": "9d1d328b627f1965"
+  },
+  "loader4.c|loader4.c::BitReader": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::BitReader",
+   "start_line": 98,
+   "end_line": 103,
+   "type": "CLASS",
+   "content_hash": "eee05c0b2ad2843a"
+  },
+  "loader4.c|loader4.c::read_bit": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::read_bit",
+   "start_line": 104,
+   "end_line": 112,
+   "type": "FUNCTION",
+   "content_hash": "167a7ff3bd0fd828"
+  },
+  "loader4.c|loader4.c::read_bits": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::read_bits",
+   "start_line": 113,
+   "end_line": 123,
+   "type": "FUNCTION",
+   "content_hash": "039eb9ce0f83e978"
+  },
+  "loader4.c|loader4.c::deobf": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::deobf",
+   "start_line": 124,
+   "end_line": 131,
+   "type": "FUNCTION",
+   "content_hash": "360eb2d39f699d96"
+  },
+  "loader4.c|loader4.c::SetHWBP_NtContinue": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::SetHWBP_NtContinue",
+   "start_line": 132,
+   "end_line": 162,
+   "type": "FUNCTION",
+   "content_hash": "8535e10e51e7a1c6"
+  },
+  "loader4.c|loader4.c::lzss_decode_mem": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::lzss_decode_mem",
+   "start_line": 163,
+   "end_line": 218,
+   "type": "FUNCTION",
+   "content_hash": "ae3bd81b6bc80951"
+  },
+  "loader4.c|loader4.c::PatchETW": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::PatchETW",
+   "start_line": 219,
+   "end_line": 251,
+   "type": "FUNCTION",
+   "content_hash": "f46fa389c260f09a"
+  },
+  "loader4.c|loader4.c::DecryptAES": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::DecryptAES",
+   "start_line": 252,
+   "end_line": 275,
+   "type": "FUNCTION",
+   "content_hash": "d103245a73f5dd6a"
+  },
+  "loader4.c|loader4.c::UPTR": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::UPTR",
+   "start_line": 278,
+   "end_line": 286,
+   "type": "FUNCTION",
+   "content_hash": "5216632051a219af"
+  },
+  "loader4.c|loader4.c::FluctuationMetadata": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::FluctuationMetadata",
+   "start_line": 287,
+   "end_line": 294,
+   "type": "CLASS",
+   "content_hash": "b963fa2a70f314f1"
+  },
+  "loader4.c|loader4.c::HookTrampolineBuffers": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::HookTrampolineBuffers",
+   "start_line": 295,
+   "end_line": 304,
+   "type": "CLASS",
+   "content_hash": "a7430dc3fe993b59"
+  },
+  "loader4.c|loader4.c::HookedSleep": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::HookedSleep",
+   "start_line": 305,
+   "end_line": 309,
+   "type": "CLASS",
+   "content_hash": "dee0c7b38c27b556"
+  },
+  "loader4.c|loader4.c::DATA": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::DATA",
+   "start_line": 310,
+   "end_line": 326,
+   "type": "CLASS",
+   "content_hash": "9e05e74fd91faadd"
+  },
+  "loader4.c|loader4.c::log": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::log",
+   "start_line": 327,
+   "end_line": 350,
+   "type": "FUNCTION",
+   "content_hash": "eb1f51a0040994c2"
+  },
+  "loader4.c|loader4.c::get_return_address": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::get_return_address",
+   "start_line": 351,
+   "end_line": 354,
+   "type": "FUNCTION",
+   "content_hash": "13898dcf85edf71e"
+  },
+  "loader4.c|loader4.c::xor32": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::xor32",
+   "start_line": 355,
+   "end_line": 361,
+   "type": "FUNCTION",
+   "content_hash": "ef9794a5c9a60466"
+  },
+  "loader4.c|loader4.c::isShellcodeThread": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::isShellcodeThread",
+   "start_line": 362,
+   "end_line": 370,
+   "type": "FUNCTION",
+   "content_hash": "bdece5143f9f95ac"
+  },
+  "loader4.c|loader4.c::shellcodeEncryptDecrypt": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::shellcodeEncryptDecrypt",
+   "start_line": 371,
+   "end_line": 404,
+   "type": "FUNCTION",
+   "content_hash": "0ce669621a9bd496"
+  },
+  "loader4.c|loader4.c::MySleep": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::MySleep",
+   "start_line": 405,
+   "end_line": 418,
+   "type": "FUNCTION",
+   "content_hash": "ae3b2714310594a4"
+  },
+  "loader4.c|loader4.c::fastTrampoline": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::fastTrampoline",
+   "start_line": 419,
+   "end_line": 457,
+   "type": "FUNCTION",
+   "content_hash": "21c667995356edd9"
+  },
+  "loader4.c|loader4.c::VEHHandler": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::VEHHandler",
+   "start_line": 458,
+   "end_line": 475,
+   "type": "FUNCTION",
+   "content_hash": "d4286b2622a27280"
+  },
+  "loader4.c|loader4.c::masqueradeCmdline": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::masqueradeCmdline",
+   "start_line": 476,
+   "end_line": 505,
+   "type": "FUNCTION",
+   "content_hash": "139459d294160f62"
+  },
+  "loader4.c|loader4.c::freeargvA": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::freeargvA",
+   "start_line": 506,
+   "end_line": 513,
+   "type": "FUNCTION",
+   "content_hash": "a3f3a703d2c0f340"
+  },
+  "loader4.c|loader4.c::freeargvW": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::freeargvW",
+   "start_line": 514,
+   "end_line": 521,
+   "type": "FUNCTION",
+   "content_hash": "930bbf1f3f4477c2"
+  },
+  "loader4.c|loader4.c::GetNTHeaders": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::GetNTHeaders",
+   "start_line": 522,
+   "end_line": 532,
+   "type": "FUNCTION",
+   "content_hash": "e1487543c8ba9d1a"
+  },
+  "loader4.c|loader4.c::GetPEDirectory": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::GetPEDirectory",
+   "start_line": 533,
+   "end_line": 541,
+   "type": "FUNCTION",
+   "content_hash": "d5540e673fa686ed"
+  },
+  "loader4.c|loader4.c::RepairIAT": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::RepairIAT",
+   "start_line": 542,
+   "end_line": 593,
+   "type": "FUNCTION",
+   "content_hash": "635a8093d5753a0c"
+  },
+  "loader4.c|loader4.c::hookGetCommandLineA": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hookGetCommandLineA",
+   "start_line": 594,
+   "end_line": 594,
+   "type": "FUNCTION",
+   "content_hash": "517e3d44c3f10a88"
+  },
+  "loader4.c|loader4.c::hookGetCommandLineW": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hookGetCommandLineW",
+   "start_line": 595,
+   "end_line": 595,
+   "type": "FUNCTION",
+   "content_hash": "32254027b9658ab9"
+  },
+  "loader4.c|loader4.c::hook__p___argv": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hook__p___argv",
+   "start_line": 596,
+   "end_line": 596,
+   "type": "FUNCTION",
+   "content_hash": "dc11ad667e3f4fd9"
+  },
+  "loader4.c|loader4.c::hook__p___wargv": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hook__p___wargv",
+   "start_line": 597,
+   "end_line": 597,
+   "type": "FUNCTION",
+   "content_hash": "7c7449483736ae7b"
+  },
+  "loader4.c|loader4.c::hook__p___argc": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hook__p___argc",
+   "start_line": 598,
+   "end_line": 598,
+   "type": "FUNCTION",
+   "content_hash": "28462131395f0195"
+  },
+  "loader4.c|loader4.c::hook__getmainargs": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hook__getmainargs",
+   "start_line": 599,
+   "end_line": 601,
+   "type": "FUNCTION",
+   "content_hash": "4d39050566c135b5"
+  },
+  "loader4.c|loader4.c::hook__wgetmainargs": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hook__wgetmainargs",
+   "start_line": 602,
+   "end_line": 604,
+   "type": "FUNCTION",
+   "content_hash": "dad107b54ed24d2d"
+  },
+  "loader4.c|loader4.c::hookexit": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hookexit",
+   "start_line": 605,
+   "end_line": 608,
+   "type": "FUNCTION",
+   "content_hash": "2dfc65c42bb33f3b"
+  },
+  "loader4.c|loader4.c::hookExitProcess": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::hookExitProcess",
+   "start_line": 609,
+   "end_line": 612,
+   "type": "FUNCTION",
+   "content_hash": "f80a4a5a9f995854"
+  },
+  "loader4.c|loader4.c::RunPE": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::RunPE",
+   "start_line": 613,
+   "end_line": 618,
+   "type": "FUNCTION",
+   "content_hash": "1fbb7809f846ec24"
+  },
+  "loader4.c|loader4.c::PELoader": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::PELoader",
+   "start_line": 619,
+   "end_line": 698,
+   "type": "FUNCTION",
+   "content_hash": "3ebe86b746c8f01d"
+  },
+  "loader4.c|loader4.c::anti_analysis": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::anti_analysis",
+   "start_line": 699,
+   "end_line": 719,
+   "type": "FUNCTION",
+   "content_hash": "fb7715b405a603a5"
+  },
+  "loader4.c|loader4.c::selfDestruct": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::selfDestruct",
+   "start_line": 720,
+   "end_line": 746,
+   "type": "FUNCTION",
+   "content_hash": "91daa901bb57fee8"
+  },
+  "loader4.c|loader4.c::getNtdll": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::getNtdll",
+   "start_line": 747,
+   "end_line": 784,
+   "type": "FUNCTION",
+   "content_hash": "3938756d2eee3490"
+  },
+  "loader4.c|loader4.c::Unhook": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::Unhook",
+   "start_line": 785,
+   "end_line": 810,
+   "type": "FUNCTION",
+   "content_hash": "01c0414867c5fff9"
+  },
+  "loader4.c|loader4.c::GetData": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::GetData",
+   "start_line": 811,
+   "end_line": 878,
+   "type": "FUNCTION",
+   "content_hash": "56d58a2d48ed3b66"
+  },
+  "loader4.c|loader4.c::main": {
+   "file_path": "loader4.c",
+   "qualified_name": "loader4.c::main",
+   "start_line": 879,
+   "end_line": 991,
+   "type": "FUNCTION",
+   "content_hash": "c97bfdec4b19d07a"
+  },
+  "loader5.c|loader5.c::WIN32_LEAN_AND_MEAN": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::WIN32_LEAN_AND_MEAN",
+   "start_line": 14,
+   "end_line": 28,
+   "type": "FUNCTION",
+   "content_hash": "d1acbae150932ab3"
+  },
+  "loader5.c|loader5.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 29,
+   "end_line": 34,
+   "type": "FUNCTION",
+   "content_hash": "49d62d05aef3f48d"
+  },
+  "loader5.c|loader5.c::DEBUG_PRINT": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::DEBUG_PRINT",
+   "start_line": 37,
+   "end_line": 42,
+   "type": "FUNCTION",
+   "content_hash": "5fbb5cfc808d0066"
+  },
+  "loader5.c|loader5.c::OBF_KEY": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::OBF_KEY",
+   "start_line": 43,
+   "end_line": 44,
+   "type": "FUNCTION",
+   "content_hash": "0b638f19f548b1bb"
+  },
+  "loader5.c|loader5.c::OBFSTR": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::OBFSTR",
+   "start_line": 45,
+   "end_line": 59,
+   "type": "FUNCTION",
+   "content_hash": "2e62cbd51fa8b152"
+  },
+  "loader5.c|loader5.c::SYSCALL_ENTRY": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::SYSCALL_ENTRY",
+   "start_line": 60,
+   "end_line": 64,
+   "type": "CLASS",
+   "content_hash": "93e2fc094d5ea83c"
+  },
+  "loader5.c|loader5.c::HellGate": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::HellGate",
+   "start_line": 65,
+   "end_line": 85,
+   "type": "FUNCTION",
+   "content_hash": "e8b85dee913b7600"
+  },
+  "loader5.c|loader5.c::NtAllocateVirtualMemory_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtAllocateVirtualMemory_indirect",
+   "start_line": 86,
+   "end_line": 105,
+   "type": "FUNCTION",
+   "content_hash": "66dee09abf207a81"
+  },
+  "loader5.c|loader5.c::NtProtectVirtualMemory_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtProtectVirtualMemory_indirect",
+   "start_line": 106,
+   "end_line": 125,
+   "type": "FUNCTION",
+   "content_hash": "3d221353498510b5"
+  },
+  "loader5.c|loader5.c::NtWriteVirtualMemory_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtWriteVirtualMemory_indirect",
+   "start_line": 126,
+   "end_line": 145,
+   "type": "FUNCTION",
+   "content_hash": "8221b314ea240e8b"
+  },
+  "loader5.c|loader5.c::NtFlushInstructionCache_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtFlushInstructionCache_indirect",
+   "start_line": 146,
+   "end_line": 165,
+   "type": "FUNCTION",
+   "content_hash": "3f606453c89f6fc2"
+  },
+  "loader5.c|loader5.c::NtClose_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtClose_indirect",
+   "start_line": 166,
+   "end_line": 184,
+   "type": "FUNCTION",
+   "content_hash": "95879130d0339612"
+  },
+  "loader5.c|loader5.c::NtOpenSection_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtOpenSection_indirect",
+   "start_line": 185,
+   "end_line": 204,
+   "type": "FUNCTION",
+   "content_hash": "742ee9d8fff16792"
+  },
+  "loader5.c|loader5.c::NtMapViewOfSection_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtMapViewOfSection_indirect",
+   "start_line": 205,
+   "end_line": 225,
+   "type": "FUNCTION",
+   "content_hash": "58d4ba2b6e837424"
+  },
+  "loader5.c|loader5.c::NtUnmapViewOfSection_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtUnmapViewOfSection_indirect",
+   "start_line": 226,
+   "end_line": 245,
+   "type": "FUNCTION",
+   "content_hash": "5aefeee56ae4310e"
+  },
+  "loader5.c|loader5.c::NtFreeVirtualMemory_indirect": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::NtFreeVirtualMemory_indirect",
+   "start_line": 246,
+   "end_line": 270,
+   "type": "FUNCTION",
+   "content_hash": "e25e45c1c94e415e"
+  },
+  "loader5.c|loader5.c::decompress_payload": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::decompress_payload",
+   "start_line": 315,
+   "end_line": 374,
+   "type": "FUNCTION",
+   "content_hash": "b7f57d2cf70e96d3"
+  },
+  "loader5.c|loader5.c::EI": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::EI",
+   "start_line": 284,
+   "end_line": 284,
+   "type": "FUNCTION",
+   "content_hash": "e071bb405aa44db6"
+  },
+  "loader5.c|loader5.c::EJ": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::EJ",
+   "start_line": 285,
+   "end_line": 285,
+   "type": "FUNCTION",
+   "content_hash": "8ca585f90b314a2f"
+  },
+  "loader5.c|loader5.c::P": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::P",
+   "start_line": 286,
+   "end_line": 286,
+   "type": "FUNCTION",
+   "content_hash": "76ce036c2d81ec9a"
+  },
+  "loader5.c|loader5.c::N": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::N",
+   "start_line": 287,
+   "end_line": 287,
+   "type": "FUNCTION",
+   "content_hash": "f9fe13b3ab27a5d1"
+  },
+  "loader5.c|loader5.c::F": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::F",
+   "start_line": 288,
+   "end_line": 289,
+   "type": "FUNCTION",
+   "content_hash": "dbabcbeca309da7d"
+  },
+  "loader5.c|loader5.c::BitReader": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::BitReader",
+   "start_line": 290,
+   "end_line": 295,
+   "type": "CLASS",
+   "content_hash": "6cc74d22c0c674c1"
+  },
+  "loader5.c|loader5.c::read_bit": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::read_bit",
+   "start_line": 296,
+   "end_line": 304,
+   "type": "FUNCTION",
+   "content_hash": "66707184c7ce90ae"
+  },
+  "loader5.c|loader5.c::read_bits": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::read_bits",
+   "start_line": 305,
+   "end_line": 314,
+   "type": "FUNCTION",
+   "content_hash": "e1ced636731b9b75"
+  },
+  "loader5.c|loader5.c::DecryptAES": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::DecryptAES",
+   "start_line": 375,
+   "end_line": 395,
+   "type": "FUNCTION",
+   "content_hash": "63b89f3212df6905"
+  },
+  "loader5.c|loader5.c::IsDebuggerPresentEx": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::IsDebuggerPresentEx",
+   "start_line": 396,
+   "end_line": 399,
+   "type": "FUNCTION",
+   "content_hash": "aebc48be3e4a62a4"
+  },
+  "loader5.c|loader5.c::HasHWBreakpoints": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::HasHWBreakpoints",
+   "start_line": 400,
+   "end_line": 406,
+   "type": "FUNCTION",
+   "content_hash": "ecbdbadc732843ac"
+  },
+  "loader5.c|loader5.c::IsDomainJoined": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::IsDomainJoined",
+   "start_line": 407,
+   "end_line": 415,
+   "type": "FUNCTION",
+   "content_hash": "46203de9f314ba68"
+  },
+  "loader5.c|loader5.c::HasRealGPU": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::HasRealGPU",
+   "start_line": 416,
+   "end_line": 433,
+   "type": "FUNCTION",
+   "content_hash": "368d8ef29758178b"
+  },
+  "loader5.c|loader5.c::HasUserActivity": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::HasUserActivity",
+   "start_line": 434,
+   "end_line": 442,
+   "type": "FUNCTION",
+   "content_hash": "0672f80470edc427"
+  },
+  "loader5.c|loader5.c::IsSandbox": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::IsSandbox",
+   "start_line": 443,
+   "end_line": 477,
+   "type": "FUNCTION",
+   "content_hash": "f5ba96f1bc0fe214"
+  },
+  "loader5.c|loader5.c::PatchAmsiViaStomping": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::PatchAmsiViaStomping",
+   "start_line": 478,
+   "end_line": 509,
+   "type": "FUNCTION",
+   "content_hash": "bedd4cfd5e2a9607"
+  },
+  "loader5.c|loader5.c::getCleanNtdllViaKnownDlls": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::getCleanNtdllViaKnownDlls",
+   "start_line": 510,
+   "end_line": 534,
+   "type": "FUNCTION",
+   "content_hash": "2d403e69b007cbd1"
+  },
+  "loader5.c|loader5.c::UnhookNtdll": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::UnhookNtdll",
+   "start_line": 535,
+   "end_line": 567,
+   "type": "FUNCTION",
+   "content_hash": "3dff2ce71b2f0a94"
+  },
+  "loader5.c|loader5.c::MasqueradeCmdline": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::MasqueradeCmdline",
+   "start_line": 568,
+   "end_line": 591,
+   "type": "FUNCTION",
+   "content_hash": "128631585269aa59"
+  },
+  "loader5.c|loader5.c::hookGetCommandLineA": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hookGetCommandLineA",
+   "start_line": 592,
+   "end_line": 592,
+   "type": "FUNCTION",
+   "content_hash": "f5f4ce9dd986fd48"
+  },
+  "loader5.c|loader5.c::hookGetCommandLineW": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hookGetCommandLineW",
+   "start_line": 593,
+   "end_line": 593,
+   "type": "FUNCTION",
+   "content_hash": "9c381cb92b709e3b"
+  },
+  "loader5.c|loader5.c::hook__p___argv": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hook__p___argv",
+   "start_line": 594,
+   "end_line": 594,
+   "type": "FUNCTION",
+   "content_hash": "dd7e0f92d671b422"
+  },
+  "loader5.c|loader5.c::hook__p___wargv": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hook__p___wargv",
+   "start_line": 595,
+   "end_line": 595,
+   "type": "FUNCTION",
+   "content_hash": "546ec46cc7858a20"
+  },
+  "loader5.c|loader5.c::hook__p___argc": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hook__p___argc",
+   "start_line": 596,
+   "end_line": 596,
+   "type": "FUNCTION",
+   "content_hash": "493f568065962e99"
+  },
+  "loader5.c|loader5.c::hook__getmainargs": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hook__getmainargs",
+   "start_line": 597,
+   "end_line": 599,
+   "type": "FUNCTION",
+   "content_hash": "d023c1578d9717e9"
+  },
+  "loader5.c|loader5.c::hook__wgetmainargs": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hook__wgetmainargs",
+   "start_line": 600,
+   "end_line": 602,
+   "type": "FUNCTION",
+   "content_hash": "e2aee1d04125fe47"
+  },
+  "loader5.c|loader5.c::hookexit": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hookexit",
+   "start_line": 603,
+   "end_line": 603,
+   "type": "FUNCTION",
+   "content_hash": "f078b94c3b0a6b50"
+  },
+  "loader5.c|loader5.c::hookExitProcess": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::hookExitProcess",
+   "start_line": 604,
+   "end_line": 608,
+   "type": "FUNCTION",
+   "content_hash": "e17161182d5a8221"
+  },
+  "loader5.c|loader5.c::GetNTHeaders": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::GetNTHeaders",
+   "start_line": 609,
+   "end_line": 619,
+   "type": "FUNCTION",
+   "content_hash": "9a73b6935f523d13"
+  },
+  "loader5.c|loader5.c::GetPEDirectory": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::GetPEDirectory",
+   "start_line": 620,
+   "end_line": 628,
+   "type": "FUNCTION",
+   "content_hash": "b769ea12661ce1e9"
+  },
+  "loader5.c|loader5.c::RepairIAT": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::RepairIAT",
+   "start_line": 629,
+   "end_line": 674,
+   "type": "FUNCTION",
+   "content_hash": "163f5144c6040ff6"
+  },
+  "loader5.c|loader5.c::EXEC_CTX": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::EXEC_CTX",
+   "start_line": 675,
+   "end_line": 678,
+   "type": "CLASS",
+   "content_hash": "ab36463c4cd480ad"
+  },
+  "loader5.c|loader5.c::FLUCTUATION_CTX": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::FLUCTUATION_CTX",
+   "start_line": 679,
+   "end_line": 690,
+   "type": "CLASS",
+   "content_hash": "76882da4e3bbce79"
+  },
+  "loader5.c|loader5.c::FluctuateEncrypt": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::FluctuateEncrypt",
+   "start_line": 691,
+   "end_line": 714,
+   "type": "FUNCTION",
+   "content_hash": "a63f9ddb1935921f"
+  },
+  "loader5.c|loader5.c::FluctuateDecrypt": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::FluctuateDecrypt",
+   "start_line": 715,
+   "end_line": 738,
+   "type": "FUNCTION",
+   "content_hash": "305fce1dd2224296"
+  },
+  "loader5.c|loader5.c::HookTrampolineBuffers": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::HookTrampolineBuffers",
+   "start_line": 739,
+   "end_line": 745,
+   "type": "CLASS",
+   "content_hash": "74db28b932cf703d"
+  },
+  "loader5.c|loader5.c::fastTrampoline": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::fastTrampoline",
+   "start_line": 746,
+   "end_line": 769,
+   "type": "FUNCTION",
+   "content_hash": "b33f3cb4ffb99eee"
+  },
+  "loader5.c|loader5.c::MySleep": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::MySleep",
+   "start_line": 770,
+   "end_line": 783,
+   "type": "FUNCTION",
+   "content_hash": "8606c401e738c2f1"
+  },
+  "loader5.c|loader5.c::GetSpoofedReturnAddress": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::GetSpoofedReturnAddress",
+   "start_line": 784,
+   "end_line": 789,
+   "type": "FUNCTION",
+   "content_hash": "501a228dbe1e1f74"
+  },
+  "loader5.c|loader5.c::ExecuteWithSpoofedRet": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::ExecuteWithSpoofedRet",
+   "start_line": 790,
+   "end_line": 802,
+   "type": "FUNCTION",
+   "content_hash": "8aef093c09455fa1"
+  },
+  "loader5.c|loader5.c::TimerExecCallback": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::TimerExecCallback",
+   "start_line": 803,
+   "end_line": 809,
+   "type": "FUNCTION",
+   "content_hash": "293687da983c0317"
+  },
+  "loader5.c|loader5.c::ModuleStompAndExecute": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::ModuleStompAndExecute",
+   "start_line": 810,
+   "end_line": 903,
+   "type": "FUNCTION",
+   "content_hash": "482d470194170839"
+  },
+  "loader5.c|loader5.c::DATA": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::DATA",
+   "start_line": 904,
+   "end_line": 908,
+   "type": "CLASS",
+   "content_hash": "34771ddf0ddecefa"
+  },
+  "loader5.c|loader5.c::GetData": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::GetData",
+   "start_line": 909,
+   "end_line": 970,
+   "type": "FUNCTION",
+   "content_hash": "6eb71c2f5128b008"
+  },
+  "loader5.c|loader5.c::SelfDestruct": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::SelfDestruct",
+   "start_line": 971,
+   "end_line": 994,
+   "type": "FUNCTION",
+   "content_hash": "3f9c230cdd667f32"
+  },
+  "loader5.c|loader5.c::main": {
+   "file_path": "loader5.c",
+   "qualified_name": "loader5.c::main",
+   "start_line": 995,
+   "end_line": 1076,
+   "type": "FUNCTION",
+   "content_hash": "393627e94aee8067"
+  },
+  "loader6.c|loader6.c::WIN32_LEAN_AND_MEAN": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::WIN32_LEAN_AND_MEAN",
+   "start_line": 15,
+   "end_line": 30,
+   "type": "FUNCTION",
+   "content_hash": "0b2316fa1d6607fd"
+  },
+  "loader6.c|loader6.c::_CRT_SECURE_NO_WARNINGS": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::_CRT_SECURE_NO_WARNINGS",
+   "start_line": 31,
+   "end_line": 36,
+   "type": "FUNCTION",
+   "content_hash": "4990300ecf5d2c55"
+  },
+  "loader6.c|loader6.c::DEBUG_PRINT": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::DEBUG_PRINT",
+   "start_line": 39,
+   "end_line": 44,
+   "type": "FUNCTION",
+   "content_hash": "b7adddbd96b6f497"
+  },
+  "loader6.c|loader6.c::OBF_KEY": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::OBF_KEY",
+   "start_line": 45,
+   "end_line": 46,
+   "type": "FUNCTION",
+   "content_hash": "daa082a2ac1abade"
+  },
+  "loader6.c|loader6.c::OBFSTR": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::OBFSTR",
+   "start_line": 47,
+   "end_line": 61,
+   "type": "FUNCTION",
+   "content_hash": "9d24c907feef4402"
+  },
+  "loader6.c|loader6.c::SYSCALL_ENTRY": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::SYSCALL_ENTRY",
+   "start_line": 62,
+   "end_line": 66,
+   "type": "CLASS",
+   "content_hash": "394b3138cdcffd12"
+  },
+  "loader6.c|loader6.c::HellGate": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::HellGate",
+   "start_line": 67,
+   "end_line": 87,
+   "type": "FUNCTION",
+   "content_hash": "91040e8a3d111f93"
+  },
+  "loader6.c|loader6.c::NtAllocateVirtualMemory_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtAllocateVirtualMemory_indirect",
+   "start_line": 88,
+   "end_line": 107,
+   "type": "FUNCTION",
+   "content_hash": "505c48f1c42f4292"
+  },
+  "loader6.c|loader6.c::NtProtectVirtualMemory_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtProtectVirtualMemory_indirect",
+   "start_line": 108,
+   "end_line": 127,
+   "type": "FUNCTION",
+   "content_hash": "82d716ba2bd214f3"
+  },
+  "loader6.c|loader6.c::NtWriteVirtualMemory_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtWriteVirtualMemory_indirect",
+   "start_line": 128,
+   "end_line": 147,
+   "type": "FUNCTION",
+   "content_hash": "15dc708177417b61"
+  },
+  "loader6.c|loader6.c::NtFlushInstructionCache_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtFlushInstructionCache_indirect",
+   "start_line": 148,
+   "end_line": 167,
+   "type": "FUNCTION",
+   "content_hash": "4ac2b7373284e804"
+  },
+  "loader6.c|loader6.c::NtClose_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtClose_indirect",
+   "start_line": 168,
+   "end_line": 186,
+   "type": "FUNCTION",
+   "content_hash": "18c9140b0b197445"
+  },
+  "loader6.c|loader6.c::NtOpenSection_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtOpenSection_indirect",
+   "start_line": 187,
+   "end_line": 206,
+   "type": "FUNCTION",
+   "content_hash": "6020ac3369065726"
+  },
+  "loader6.c|loader6.c::NtMapViewOfSection_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtMapViewOfSection_indirect",
+   "start_line": 207,
+   "end_line": 227,
+   "type": "FUNCTION",
+   "content_hash": "34e0ca87f0a30a94"
+  },
+  "loader6.c|loader6.c::NtUnmapViewOfSection_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtUnmapViewOfSection_indirect",
+   "start_line": 228,
+   "end_line": 247,
+   "type": "FUNCTION",
+   "content_hash": "35c48248ae20107f"
+  },
+  "loader6.c|loader6.c::NtFreeVirtualMemory_indirect": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::NtFreeVirtualMemory_indirect",
+   "start_line": 248,
+   "end_line": 272,
+   "type": "FUNCTION",
+   "content_hash": "9779c2760c7e29f5"
+  },
+  "loader6.c|loader6.c::decompress_payload": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::decompress_payload",
+   "start_line": 317,
+   "end_line": 376,
+   "type": "FUNCTION",
+   "content_hash": "64200638e7e3e477"
+  },
+  "loader6.c|loader6.c::EI": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::EI",
+   "start_line": 286,
+   "end_line": 286,
+   "type": "FUNCTION",
+   "content_hash": "d560eb66dca2c768"
+  },
+  "loader6.c|loader6.c::EJ": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::EJ",
+   "start_line": 287,
+   "end_line": 287,
+   "type": "FUNCTION",
+   "content_hash": "806b03c4f4c2331c"
+  },
+  "loader6.c|loader6.c::P": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::P",
+   "start_line": 288,
+   "end_line": 288,
+   "type": "FUNCTION",
+   "content_hash": "ac6eac23d5b85ae5"
+  },
+  "loader6.c|loader6.c::N": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::N",
+   "start_line": 289,
+   "end_line": 289,
+   "type": "FUNCTION",
+   "content_hash": "a57b47990db0d587"
+  },
+  "loader6.c|loader6.c::F": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::F",
+   "start_line": 290,
+   "end_line": 291,
+   "type": "FUNCTION",
+   "content_hash": "82caf7661dccaf3b"
+  },
+  "loader6.c|loader6.c::BitReader": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::BitReader",
+   "start_line": 292,
+   "end_line": 297,
+   "type": "CLASS",
+   "content_hash": "704e08cb817b2f78"
+  },
+  "loader6.c|loader6.c::read_bit": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::read_bit",
+   "start_line": 298,
+   "end_line": 306,
+   "type": "FUNCTION",
+   "content_hash": "a5116d6b029a4eeb"
+  },
+  "loader6.c|loader6.c::read_bits": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::read_bits",
+   "start_line": 307,
+   "end_line": 316,
+   "type": "FUNCTION",
+   "content_hash": "cc9fae53bad86d2a"
+  },
+  "loader6.c|loader6.c::DecryptAES": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::DecryptAES",
+   "start_line": 377,
+   "end_line": 397,
+   "type": "FUNCTION",
+   "content_hash": "05c52b6ec438df99"
+  },
+  "loader6.c|loader6.c::IsDebuggerPresentEx": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::IsDebuggerPresentEx",
+   "start_line": 398,
+   "end_line": 401,
+   "type": "FUNCTION",
+   "content_hash": "e702e1bfe364d759"
+  },
+  "loader6.c|loader6.c::HasHWBreakpoints": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::HasHWBreakpoints",
+   "start_line": 402,
+   "end_line": 408,
+   "type": "FUNCTION",
+   "content_hash": "6f4aef0a3ba7f2aa"
+  },
+  "loader6.c|loader6.c::IsDomainJoined": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::IsDomainJoined",
+   "start_line": 409,
+   "end_line": 417,
+   "type": "FUNCTION",
+   "content_hash": "fe3b0a906a3c715b"
+  },
+  "loader6.c|loader6.c::HasRealGPU": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::HasRealGPU",
+   "start_line": 418,
+   "end_line": 435,
+   "type": "FUNCTION",
+   "content_hash": "3c97633d69543247"
+  },
+  "loader6.c|loader6.c::HasUserActivity": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::HasUserActivity",
+   "start_line": 436,
+   "end_line": 444,
+   "type": "FUNCTION",
+   "content_hash": "942d61b963514d02"
+  },
+  "loader6.c|loader6.c::IsSandbox": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::IsSandbox",
+   "start_line": 445,
+   "end_line": 478,
+   "type": "FUNCTION",
+   "content_hash": "8b4f3c7e5a4ff557"
+  },
+  "loader6.c|loader6.c::PatchAmsiViaStomping": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::PatchAmsiViaStomping",
+   "start_line": 479,
+   "end_line": 511,
+   "type": "FUNCTION",
+   "content_hash": "2c8f94afc7362e96"
+  },
+  "loader6.c|loader6.c::getCleanNtdllViaKnownDlls": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::getCleanNtdllViaKnownDlls",
+   "start_line": 512,
+   "end_line": 536,
+   "type": "FUNCTION",
+   "content_hash": "613ccf6f06637ff3"
+  },
+  "loader6.c|loader6.c::UnhookNtdll": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::UnhookNtdll",
+   "start_line": 537,
+   "end_line": 570,
+   "type": "FUNCTION",
+   "content_hash": "e4563935d3f48299"
+  },
+  "loader6.c|loader6.c::MasqueradeCmdline": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::MasqueradeCmdline",
+   "start_line": 571,
+   "end_line": 594,
+   "type": "FUNCTION",
+   "content_hash": "2f73fbe5f98afbd1"
+  },
+  "loader6.c|loader6.c::hookGetCommandLineA": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hookGetCommandLineA",
+   "start_line": 595,
+   "end_line": 595,
+   "type": "FUNCTION",
+   "content_hash": "61b6f4201205bc8e"
+  },
+  "loader6.c|loader6.c::hookGetCommandLineW": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hookGetCommandLineW",
+   "start_line": 596,
+   "end_line": 596,
+   "type": "FUNCTION",
+   "content_hash": "680c128a4ff40801"
+  },
+  "loader6.c|loader6.c::hook__p___argv": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hook__p___argv",
+   "start_line": 597,
+   "end_line": 597,
+   "type": "FUNCTION",
+   "content_hash": "0753ea75e8c91331"
+  },
+  "loader6.c|loader6.c::hook__p___wargv": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hook__p___wargv",
+   "start_line": 598,
+   "end_line": 598,
+   "type": "FUNCTION",
+   "content_hash": "c79ccd390af0523f"
+  },
+  "loader6.c|loader6.c::hook__p___argc": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hook__p___argc",
+   "start_line": 599,
+   "end_line": 599,
+   "type": "FUNCTION",
+   "content_hash": "64e03126e8c4d9f9"
+  },
+  "loader6.c|loader6.c::hook__getmainargs": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hook__getmainargs",
+   "start_line": 600,
+   "end_line": 602,
+   "type": "FUNCTION",
+   "content_hash": "adb133b2a10e1450"
+  },
+  "loader6.c|loader6.c::hook__wgetmainargs": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hook__wgetmainargs",
+   "start_line": 603,
+   "end_line": 605,
+   "type": "FUNCTION",
+   "content_hash": "52030197ce046b08"
+  },
+  "loader6.c|loader6.c::hookexit": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hookexit",
+   "start_line": 606,
+   "end_line": 606,
+   "type": "FUNCTION",
+   "content_hash": "193897ab6b41b0cf"
+  },
+  "loader6.c|loader6.c::hookExitProcess": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::hookExitProcess",
+   "start_line": 607,
+   "end_line": 611,
+   "type": "FUNCTION",
+   "content_hash": "1f6b6ecc028e1b54"
+  },
+  "loader6.c|loader6.c::GetNTHeaders": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::GetNTHeaders",
+   "start_line": 612,
+   "end_line": 622,
+   "type": "FUNCTION",
+   "content_hash": "e9d01b5f2bfbd702"
+  },
+  "loader6.c|loader6.c::GetPEDirectory": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::GetPEDirectory",
+   "start_line": 623,
+   "end_line": 631,
+   "type": "FUNCTION",
+   "content_hash": "047b2e4cd04b6e34"
+  },
+  "loader6.c|loader6.c::RepairIAT": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::RepairIAT",
+   "start_line": 632,
+   "end_line": 677,
+   "type": "FUNCTION",
+   "content_hash": "ef57b2e35ac7d28e"
+  },
+  "loader6.c|loader6.c::EXEC_CTX": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::EXEC_CTX",
+   "start_line": 678,
+   "end_line": 681,
+   "type": "CLASS",
+   "content_hash": "bce9f189633c2c90"
+  },
+  "loader6.c|loader6.c::FLUCTUATION_CTX": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::FLUCTUATION_CTX",
+   "start_line": 682,
+   "end_line": 693,
+   "type": "CLASS",
+   "content_hash": "cd8226341b632316"
+  },
+  "loader6.c|loader6.c::FluctuateEncrypt": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::FluctuateEncrypt",
+   "start_line": 694,
+   "end_line": 717,
+   "type": "FUNCTION",
+   "content_hash": "92468d69fa5b27d5"
+  },
+  "loader6.c|loader6.c::FluctuateDecrypt": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::FluctuateDecrypt",
+   "start_line": 718,
+   "end_line": 741,
+   "type": "FUNCTION",
+   "content_hash": "eb9b66f7c60d5971"
+  },
+  "loader6.c|loader6.c::HookTrampolineBuffers": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::HookTrampolineBuffers",
+   "start_line": 742,
+   "end_line": 748,
+   "type": "CLASS",
+   "content_hash": "5b9ab27720d1c05c"
+  },
+  "loader6.c|loader6.c::fastTrampoline": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::fastTrampoline",
+   "start_line": 749,
+   "end_line": 772,
+   "type": "FUNCTION",
+   "content_hash": "8aad0c26b3a06ea4"
+  },
+  "loader6.c|loader6.c::MySleep": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::MySleep",
+   "start_line": 773,
+   "end_line": 786,
+   "type": "FUNCTION",
+   "content_hash": "1d1464211ecbae2f"
+  },
+  "loader6.c|loader6.c::GetSpoofedReturnAddress": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::GetSpoofedReturnAddress",
+   "start_line": 787,
+   "end_line": 792,
+   "type": "FUNCTION",
+   "content_hash": "01c976f923b69fbb"
+  },
+  "loader6.c|loader6.c::ExecuteWithSpoofedRet": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::ExecuteWithSpoofedRet",
+   "start_line": 793,
+   "end_line": 805,
+   "type": "FUNCTION",
+   "content_hash": "2883b1aaaea271fb"
+  },
+  "loader6.c|loader6.c::TimerExecCallback": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::TimerExecCallback",
+   "start_line": 806,
+   "end_line": 813,
+   "type": "FUNCTION",
+   "content_hash": "50faa3002a4a800e"
+  },
+  "loader6.c|loader6.c::ModuleStompAndExecute": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::ModuleStompAndExecute",
+   "start_line": 814,
+   "end_line": 907,
+   "type": "FUNCTION",
+   "content_hash": "05b74b87229c7005"
+  },
+  "loader6.c|loader6.c::DATA": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::DATA",
+   "start_line": 908,
+   "end_line": 912,
+   "type": "CLASS",
+   "content_hash": "09bc5c7c1290e78e"
+  },
+  "loader6.c|loader6.c::GetData": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::GetData",
+   "start_line": 913,
+   "end_line": 973,
+   "type": "FUNCTION",
+   "content_hash": "e2532682e24b1acc"
+  },
+  "loader6.c|loader6.c::SelfDestruct": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::SelfDestruct",
+   "start_line": 974,
+   "end_line": 997,
+   "type": "FUNCTION",
+   "content_hash": "615676ea38e91dde"
+  },
+  "loader6.c|loader6.c::main": {
+   "file_path": "loader6.c",
+   "qualified_name": "loader6.c::main",
+   "start_line": 998,
+   "end_line": 1085,
+   "type": "FUNCTION",
+   "content_hash": "d622ea96128e2002"
+  },
+  "lz4.c|lz4.c::LZ4_ALIGN": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_ALIGN",
+   "start_line": 16,
+   "end_line": 16,
+   "type": "FUNCTION",
+   "content_hash": "207aba00298f952c"
+  },
+  "lz4.c|lz4.c::LZ4_ARCH_64": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_ARCH_64",
+   "start_line": 17,
+   "end_line": 17,
+   "type": "FUNCTION",
+   "content_hash": "207e6d994accaf2d"
+  },
+  "lz4.c|lz4.c::LZ4_FAST_DEC_LOOP": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_FAST_DEC_LOOP",
+   "start_line": 18,
+   "end_line": 22,
+   "type": "FUNCTION",
+   "content_hash": "01ce14d9b9ba225a"
+  },
+  "lz4.c|lz4.c::BYTE": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::BYTE",
+   "start_line": 23,
+   "end_line": 23,
+   "type": "FUNCTION",
+   "content_hash": "40e0141776dcac3c"
+  },
+  "lz4.c|lz4.c::U16": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::U16",
+   "start_line": 24,
+   "end_line": 24,
+   "type": "FUNCTION",
+   "content_hash": "7ae403c1d9a44744"
+  },
+  "lz4.c|lz4.c::U32": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::U32",
+   "start_line": 25,
+   "end_line": 25,
+   "type": "FUNCTION",
+   "content_hash": "d63070b3bbf6aae3"
+  },
+  "lz4.c|lz4.c::S32": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::S32",
+   "start_line": 26,
+   "end_line": 26,
+   "type": "FUNCTION",
+   "content_hash": "f30b20e4fa30f825"
+  },
+  "lz4.c|lz4.c::U64": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::U64",
+   "start_line": 27,
+   "end_line": 29,
+   "type": "FUNCTION",
+   "content_hash": "632510008ddab32f"
+  },
+  "lz4.c|lz4.c::MEMORY_SANITIZER": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::MEMORY_SANITIZER",
+   "start_line": 30,
+   "end_line": 35,
+   "type": "FUNCTION",
+   "content_hash": "0d110181c93a9ef0"
+  },
+  "lz4.c|lz4.c::LZ4_8_BIT": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_8_BIT",
+   "start_line": 36,
+   "end_line": 36,
+   "type": "FUNCTION",
+   "content_hash": "c439d86f32063039"
+  },
+  "lz4.c|lz4.c::LZ4_16_BIT": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_16_BIT",
+   "start_line": 37,
+   "end_line": 37,
+   "type": "FUNCTION",
+   "content_hash": "df9f4c4b21fce0e2"
+  },
+  "lz4.c|lz4.c::LZ4_32_BIT": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_32_BIT",
+   "start_line": 38,
+   "end_line": 38,
+   "type": "FUNCTION",
+   "content_hash": "9c21f82d57bc4fbb"
+  },
+  "lz4.c|lz4.c::LZ4_64_BIT": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_64_BIT",
+   "start_line": 39,
+   "end_line": 41,
+   "type": "FUNCTION",
+   "content_hash": "f99b8ac9847d5ee5"
+  },
+  "lz4.c|lz4.c::LZ4_64K": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_64K",
+   "start_line": 42,
+   "end_line": 44,
+   "type": "FUNCTION",
+   "content_hash": "28cb2826601bf44b"
+  },
+  "lz4.c|lz4.c::LZ4_MEMORY_USAGE": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_MEMORY_USAGE",
+   "start_line": 45,
+   "end_line": 45,
+   "type": "FUNCTION",
+   "content_hash": "d081b00140d9b900"
+  },
+  "lz4.c|lz4.c::LZ4_MAX_INPUT_SIZE": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_MAX_INPUT_SIZE",
+   "start_line": 46,
+   "end_line": 46,
+   "type": "FUNCTION",
+   "content_hash": "7d5b7251fa98a441"
+  },
+  "lz4.c|lz4.c::LZ4_COMPRESSBOUND": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_COMPRESSBOUND",
+   "start_line": 47,
+   "end_line": 51,
+   "type": "FUNCTION",
+   "content_hash": "aa9eca4c762835fe"
+  },
+  "lz4.c|lz4.c::LZ4_streamDecode_t_internal": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_streamDecode_t_internal",
+   "start_line": 52,
+   "end_line": 61,
+   "type": "CLASS",
+   "content_hash": "fd17874fdda34022"
+  },
+  "lz4.c|lz4.c::LZ4_read32": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_read32",
+   "start_line": 62,
+   "end_line": 67,
+   "type": "FUNCTION",
+   "content_hash": "0801b5c1a0afa412"
+  },
+  "lz4.c|lz4.c::LZ4_write32": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_write32",
+   "start_line": 68,
+   "end_line": 71,
+   "type": "FUNCTION",
+   "content_hash": "ce166f3e241a9e39"
+  },
+  "lz4.c|lz4.c::LZ4_read16": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_read16",
+   "start_line": 72,
+   "end_line": 77,
+   "type": "FUNCTION",
+   "content_hash": "3ce0a275b4ca8ec9"
+  },
+  "lz4.c|lz4.c::LZ4_write16": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_write16",
+   "start_line": 78,
+   "end_line": 81,
+   "type": "FUNCTION",
+   "content_hash": "8eaa95db1febc324"
+  },
+  "lz4.c|lz4.c::LZ4_read64": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_read64",
+   "start_line": 82,
+   "end_line": 90,
+   "type": "FUNCTION",
+   "content_hash": "094b0ebb2578199b"
+  },
+  "lz4.c|lz4.c::LZ4_decompress_safe": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_decompress_safe",
+   "start_line": 91,
+   "end_line": 94,
+   "type": "FUNCTION",
+   "content_hash": "164051cdedcd32d3"
+  },
+  "lz4.c|lz4.c::LZ4_decompress_safe_usingDict": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_decompress_safe_usingDict",
+   "start_line": 95,
+   "end_line": 188,
+   "type": "FUNCTION",
+   "content_hash": "5bc05536bd47700f"
+  },
+  "lz4.c|lz4.c::LZ4_setStreamDecode": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_setStreamDecode",
+   "start_line": 189,
+   "end_line": 197,
+   "type": "FUNCTION",
+   "content_hash": "fa13f81286d3aeca"
+  },
+  "lz4.c|lz4.c::LZ4_decompress_safe_continue": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_decompress_safe_continue",
+   "start_line": 198,
+   "end_line": 204,
+   "type": "FUNCTION",
+   "content_hash": "0b7dc7c48352f16d"
+  },
+  "lz4.c|lz4.c::LZ4_resetStreamDecode": {
+   "file_path": "lz4.c",
+   "qualified_name": "lz4.c::LZ4_resetStreamDecode",
+   "start_line": 205,
+   "end_line": 210,
+   "type": "FUNCTION",
+   "content_hash": "8cc433f8317d0596"
+  },
+  "lz4.h|lz4.h::LZ4_H_2983827168210": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_H_2983827168210",
+   "start_line": 36,
+   "end_line": 49,
+   "type": "FUNCTION",
+   "content_hash": "80643c80f3aea318"
+  },
+  "lz4.h|lz4.h::LZ4_EXPORT": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_EXPORT",
+   "start_line": 54,
+   "end_line": 58,
+   "type": "FUNCTION",
+   "content_hash": "ef77d3a280a0c548"
+  },
+  "lz4.h|lz4.h::LZ4_VERSION_MAJOR": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_VERSION_MAJOR",
+   "start_line": 59,
+   "end_line": 59,
+   "type": "FUNCTION",
+   "content_hash": "eb4ec295265b8c72"
+  },
+  "lz4.h|lz4.h::LZ4_VERSION_MINOR": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_VERSION_MINOR",
+   "start_line": 60,
+   "end_line": 60,
+   "type": "FUNCTION",
+   "content_hash": "5038eb3ca6f60760"
+  },
+  "lz4.h|lz4.h::LZ4_VERSION_RELEASE": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_VERSION_RELEASE",
+   "start_line": 61,
+   "end_line": 61,
+   "type": "FUNCTION",
+   "content_hash": "7d1a93610d29fadd"
+  },
+  "lz4.h|lz4.h::LZ4_VERSION_NUMBER": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_VERSION_NUMBER",
+   "start_line": 62,
+   "end_line": 64,
+   "type": "FUNCTION",
+   "content_hash": "bac7db3a9abb203b"
+  },
+  "lz4.h|lz4.h::LZ4_decompress_safe": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_decompress_safe",
+   "start_line": 65,
+   "end_line": 88,
+   "type": "FUNCTION",
+   "content_hash": "0f9d05ed590bdf96"
+  },
+  "lz4.h|lz4.h::LZ4_streamDecode_t": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_streamDecode_t",
+   "start_line": 89,
+   "end_line": 89,
+   "type": "CLASS",
+   "content_hash": "e1d17ebabc467283"
+  },
+  "lz4.h|lz4.h::LZ4_setStreamDecode": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_setStreamDecode",
+   "start_line": 90,
+   "end_line": 90,
+   "type": "FUNCTION",
+   "content_hash": "2b5a6c9d62cee103"
+  },
+  "lz4.h|lz4.h::LZ4_decompress_safe_continue": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_decompress_safe_continue",
+   "start_line": 91,
+   "end_line": 91,
+   "type": "FUNCTION",
+   "content_hash": "1ce8c8d0d3192cc8"
+  },
+  "lz4.h|lz4.h::LZ4_resetStreamDecode": {
+   "file_path": "lz4.h",
+   "qualified_name": "lz4.h::LZ4_resetStreamDecode",
+   "start_line": 92,
+   "end_line": 98,
+   "type": "FUNCTION",
+   "content_hash": "2d7fb7e7d38b5127"
+  },
+  "lzss.c|lzss.c::EI": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::EI",
+   "start_line": 5,
+   "end_line": 5,
+   "type": "FUNCTION",
+   "content_hash": "39a6ed62163b8632"
+  },
+  "lzss.c|lzss.c::EJ": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::EJ",
+   "start_line": 6,
+   "end_line": 6,
+   "type": "FUNCTION",
+   "content_hash": "197595a58c3e2e13"
+  },
+  "lzss.c|lzss.c::P": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::P",
+   "start_line": 7,
+   "end_line": 7,
+   "type": "FUNCTION",
+   "content_hash": "dde387935c0152f5"
+  },
+  "lzss.c|lzss.c::N": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::N",
+   "start_line": 8,
+   "end_line": 8,
+   "type": "FUNCTION",
+   "content_hash": "ddf6757ec82e06d8"
+  },
+  "lzss.c|lzss.c::F": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::F",
+   "start_line": 9,
+   "end_line": 15,
+   "type": "FUNCTION",
+   "content_hash": "3f10371c2d1462b6"
+  },
+  "lzss.c|lzss.c::error": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::error",
+   "start_line": 16,
+   "end_line": 17,
+   "type": "FUNCTION",
+   "content_hash": "89ee8d8518148b95"
+  },
+  "lzss.c|lzss.c::putbit1": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::putbit1",
+   "start_line": 18,
+   "end_line": 24,
+   "type": "FUNCTION",
+   "content_hash": "20aa6ea0ec5712b3"
+  },
+  "lzss.c|lzss.c::putbit0": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::putbit0",
+   "start_line": 25,
+   "end_line": 30,
+   "type": "FUNCTION",
+   "content_hash": "593afdec34f08e5e"
+  },
+  "lzss.c|lzss.c::flush_bit_buffer": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::flush_bit_buffer",
+   "start_line": 31,
+   "end_line": 33,
+   "type": "FUNCTION",
+   "content_hash": "c9841fa9338a342c"
+  },
+  "lzss.c|lzss.c::output1": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::output1",
+   "start_line": 34,
+   "end_line": 38,
+   "type": "FUNCTION",
+   "content_hash": "ad22eb1f3a8e796f"
+  },
+  "lzss.c|lzss.c::output2": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::output2",
+   "start_line": 39,
+   "end_line": 45,
+   "type": "FUNCTION",
+   "content_hash": "55b8b6854c4c7521"
+  },
+  "lzss.c|lzss.c::encode": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::encode",
+   "start_line": 46,
+   "end_line": 76,
+   "type": "FUNCTION",
+   "content_hash": "17cfe53d0d7ec2ad"
+  },
+  "lzss.c|lzss.c::getbit": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::getbit",
+   "start_line": 77,
+   "end_line": 86,
+   "type": "FUNCTION",
+   "content_hash": "c028a9c1a6b3fef2"
+  },
+  "lzss.c|lzss.c::decode": {
+   "file_path": "lzss.c",
+   "qualified_name": "lzss.c::decode",
+   "start_line": 87,
+   "end_line": 104,
+   "type": "FUNCTION",
+   "content_hash": "4d0fdbe7c445daef"
+  },
+  "pack.c|pack.c::encode": {
+   "file_path": "pack.c",
+   "qualified_name": "pack.c::encode",
+   "start_line": 5,
+   "end_line": 5,
+   "type": "FUNCTION",
+   "content_hash": "8be026dad83fb6ef"
+  },
+  "pack.c|pack.c::outfile": {
+   "file_path": "pack.c",
+   "qualified_name": "pack.c::outfile",
+   "start_line": 6,
+   "end_line": 7,
+   "type": "FUNCTION",
+   "content_hash": "7d1547f5e112a166"
+  },
+  "pack.c|pack.c::main": {
+   "file_path": "pack.c",
+   "qualified_name": "pack.c::main",
+   "start_line": 8,
+   "end_line": 22,
+   "type": "FUNCTION",
+   "content_hash": "d0f04a064d3079c5"
+  },
+  "test.c|test.c::decode": {
+   "file_path": "test.c",
+   "qualified_name": "test.c::decode",
+   "start_line": 6,
+   "end_line": 6,
+   "type": "FUNCTION",
+   "content_hash": "fe278e560f89124f"
+  },
+  "test.c|test.c::outfile": {
+   "file_path": "test.c",
+   "qualified_name": "test.c::outfile",
+   "start_line": 7,
+   "end_line": 8,
+   "type": "FUNCTION",
+   "content_hash": "8f9671d28ceb2e3b"
+  },
+  "test.c|test.c::main": {
+   "file_path": "test.c",
+   "qualified_name": "test.c::main",
+   "start_line": 9,
+   "end_line": 21,
+   "type": "FUNCTION",
+   "content_hash": "fc0faba5e9e3a5e0"
+  },
+  "unpack.c|unpack.c::decode": {
+   "file_path": "unpack.c",
+   "qualified_name": "unpack.c::decode",
+   "start_line": 5,
+   "end_line": 5,
+   "type": "FUNCTION",
+   "content_hash": "16a48ba460c4d512"
+  },
+  "unpack.c|unpack.c::outfile": {
+   "file_path": "unpack.c",
+   "qualified_name": "unpack.c::outfile",
+   "start_line": 6,
+   "end_line": 7,
+   "type": "FUNCTION",
+   "content_hash": "3a2f12036763b1b0"
+  },
+  "unpack.c|unpack.c::main": {
+   "file_path": "unpack.c",
+   "qualified_name": "unpack.c::main",
+   "start_line": 8,
+   "end_line": 23,
+   "type": "FUNCTION",
+   "content_hash": "03b34ea1198023e8"
+  }
+ },
+ "components": [
+  {
+   "name": "root: loader5",
+   "description": "root: loader5 groups 4 files (c, h) around LZ4_H_2983827168210, LZ4_EXPORT, LZ4_EXPORT, LZ4_EXPORT, LZ4_VERSION_MAJOR. EXEC_CTX: Estructuras para ejecución y fluctuación",
+   "key_entities": [
+    {
+     "qualified_name": "lz4.h::LZ4_H_2983827168210",
+     "reference_file": "lz4.h",
+     "reference_start_line": 36,
+     "reference_end_line": 49
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_EXPORT",
+     "reference_file": "lz4.h",
+     "reference_start_line": 50,
+     "reference_end_line": 51
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_EXPORT",
+     "reference_file": "lz4.h",
+     "reference_start_line": 52,
+     "reference_end_line": 53
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_EXPORT",
+     "reference_file": "lz4.h",
+     "reference_start_line": 54,
+     "reference_end_line": 58
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_VERSION_MAJOR",
+     "reference_file": "lz4.h",
+     "reference_start_line": 59,
+     "reference_end_line": 59
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_VERSION_MINOR",
+     "reference_file": "lz4.h",
+     "reference_start_line": 60,
+     "reference_end_line": 60
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_VERSION_RELEASE",
+     "reference_file": "lz4.h",
+     "reference_start_line": 61,
+     "reference_end_line": 61
+    },
+    {
+     "qualified_name": "lz4.h::LZ4_VERSION_NUMBER",
+     "reference_file": "lz4.h",
+     "reference_start_line": 62,
+     "reference_end_line": 64
+    }
+   ],
+   "source_cluster_ids": [],
+   "file_methods": [
+    {
+     "file_path": "loader5.c",
+     "methods": [
+      "loader5.c::WIN32_LEAN_AND_MEAN",
+      "loader5.c::_CRT_SECURE_NO_WARNINGS",
+      "loader5.c::DEBUG_PRINT",
+      "loader5.c::DEBUG_PRINT",
+      "loader5.c::OBF_KEY",
+      "loader5.c::OBFSTR",
+      "loader5.c::SYSCALL_ENTRY",
+      "loader5.c::HellGate",
+      "loader5.c::NtAllocateVirtualMemory_indirect",
+      "loader5.c::NtProtectVirtualMemory_indirect",
+      "loader5.c::NtWriteVirtualMemory_indirect",
+      "loader5.c::NtFlushInstructionCache_indirect",
+      "loader5.c::NtClose_indirect",
+      "loader5.c::NtOpenSection_indirect",
+      "loader5.c::NtMapViewOfSection_indirect",
+      "loader5.c::NtUnmapViewOfSection_indirect",
+      "loader5.c::NtFreeVirtualMemory_indirect",
+      "loader5.c::decompress_payload",
+      "loader5.c::EI",
+      "loader5.c::EJ",
+      "loader5.c::P",
+      "loader5.c::N",
+      "loader5.c::F",
+      "loader5.c::BitReader",
+      "loader5.c::read_bit",
+      "loader5.c::read_bits",
+      "loader5.c::decompress_payload",
+      "loader5.c::DecryptAES",
+      "loader5.c::IsDebuggerPresentEx",
+      "loader5.c::HasHWBreakpoints",
+      "loader5.c::IsDomainJoined",
+      "loader5.c::HasRealGPU",
+      "loader5.c::HasUserActivity",
+      "loader5.c::IsSandbox",
+      "loader5.c::PatchAmsiViaStomping",
+      "loader5.c::getCleanNtdllViaKnownDlls",
+      "loader5.c::UnhookNtdll",
+      "loader5.c::MasqueradeCmdline",
+      "loader5.c::hookGetCommandLineA",
+      "loader5.c::hookGetCommandLineW",
+      "loader5.c::hook__p___argv",
+      "loader5.c::hook__p___wargv",
+      "loader5.c::hook__p___argc",
+      "loader5.c::hook__getmainargs",
+      "loader5.c::hook__wgetmainargs",
+      "loader5.c::hookexit",
+      "loader5.c::hookExitProcess",
+      "loader5.c::GetNTHeaders",
+      "loader5.c::GetPEDirectory",
+      "loader5.c::RepairIAT",
+      "loader5.c::EXEC_CTX",
+      "loader5.c::FLUCTUATION_CTX",
+      "loader5.c::FluctuateEncrypt",
+      "loader5.c::FluctuateDecrypt",
+      "loader5.c::HookTrampolineBuffers",
+      "loader5.c::fastTrampoline",
+      "loader5.c::MySleep",
+      "loader5.c::GetSpoofedReturnAddress",
+      "loader5.c::ExecuteWithSpoofedRet",
+      "loader5.c::TimerExecCallback",
+      "loader5.c::ModuleStompAndExecute",
+      "loader5.c::DATA",
+      "loader5.c::GetData",
+      "loader5.c::SelfDestruct",
+      "loader5.c::main"
+     ]
+    },
+    {
+     "file_path": "loader6.c",
+     "methods": [
+      "loader6.c::WIN32_LEAN_AND_MEAN",
+      "loader6.c::_CRT_SECURE_NO_WARNINGS",
+      "loader6.c::DEBUG_PRINT",
+      "loader6.c::DEBUG_PRINT",
+      "loader6.c::OBF_KEY",
+      "loader6.c::OBFSTR",
+      "loader6.c::SYSCALL_ENTRY",
+      "loader6.c::HellGate",
+      "loader6.c::NtAllocateVirtualMemory_indirect",
+      "loader6.c::NtProtectVirtualMemory_indirect",
+      "loader6.c::NtWriteVirtualMemory_indirect",
+      "loader6.c::NtFlushInstructionCache_indirect",
+      "loader6.c::NtClose_indirect",
+      "loader6.c::NtOpenSection_indirect",
+      "loader6.c::NtMapViewOfSection_indirect",
+      "loader6.c::NtUnmapViewOfSection_indirect",
+      "loader6.c::NtFreeVirtualMemory_indirect",
+      "loader6.c::decompress_payload",
+      "loader6.c::EI",
+      "loader6.c::EJ",
+      "loader6.c::P",
+      "loader6.c::N",
+      "loader6.c::F",
+      "loader6.c::BitReader",
+      "loader6.c::read_bit",
+      "loader6.c::read_bits",
+      "loader6.c::decompress_payload",
+      "loader6.c::DecryptAES",
+      "loader6.c::IsDebuggerPresentEx",
+      "loader6.c::HasHWBreakpoints",
+      "loader6.c::IsDomainJoined",
+      "loader6.c::HasRealGPU",
+      "loader6.c::HasUserActivity",
+      "loader6.c::IsSandbox",
+      "loader6.c::PatchAmsiViaStomping",
+      "loader6.c::getCleanNtdllViaKnownDlls",
+      "loader6.c::UnhookNtdll",
+      "loader6.c::MasqueradeCmdline",
+      "loader6.c::hookGetCommandLineA",
+      "loader6.c::hookGetCommandLineW",
+      "loader6.c::hook__p___argv",
+      "loader6.c::hook__p___wargv",
+      "loader6.c::hook__p___argc",
+      "loader6.c::hook__getmainargs",
+      "loader6.c::hook__wgetmainargs",
+      "loader6.c::hookexit",
+      "loader6.c::hookExitProcess",
+      "loader6.c::GetNTHeaders",
+      "loader6.c::GetPEDirectory",
+      "loader6.c::RepairIAT",
+      "loader6.c::EXEC_CTX",
+      "loader6.c::FLUCTUATION_CTX",
+      "loader6.c::FluctuateEncrypt",
+      "loader6.c::FluctuateDecrypt",
+      "loader6.c::HookTrampolineBuffers",
+      "loader6.c::fastTrampoline",
+      "loader6.c::MySleep",
+      "loader6.c::GetSpoofedReturnAddress",
+      "loader6.c::ExecuteWithSpoofedRet",
+      "loader6.c::TimerExecCallback",
+      "loader6.c::ModuleStompAndExecute",
+      "loader6.c::DATA",
+      "loader6.c::GetData",
+      "loader6.c::SelfDestruct",
+      "loader6.c::main"
+     ]
+    },
+    {
+     "file_path": "lz4.c",
+     "methods": [
+      "lz4.c::LZ4_ALIGN",
+      "lz4.c::LZ4_ARCH_64",
+      "lz4.c::LZ4_FAST_DEC_LOOP",
+      "lz4.c::BYTE",
+      "lz4.c::U16",
+      "lz4.c::U32",
+      "lz4.c::S32",
+      "lz4.c::U64",
+      "lz4.c::MEMORY_SANITIZER",
+      "lz4.c::LZ4_8_BIT",
+      "lz4.c::LZ4_16_BIT",
+      "lz4.c::LZ4_32_BIT",
+      "lz4.c::LZ4_64_BIT",
+      "lz4.c::LZ4_64K",
+      "lz4.c::LZ4_MEMORY_USAGE",
+      "lz4.c::LZ4_MAX_INPUT_SIZE",
+      "lz4.c::LZ4_COMPRESSBOUND",
+      "lz4.c::LZ4_streamDecode_t_internal",
+      "lz4.c::LZ4_read32",
+      "lz4.c::LZ4_write32",
+      "lz4.c::LZ4_read16",
+      "lz4.c::LZ4_write16",
+      "lz4.c::LZ4_read64",
+      "lz4.c::LZ4_decompress_safe",
+      "lz4.c::LZ4_decompress_safe_usingDict",
+      "lz4.c::LZ4_setStreamDecode",
+      "lz4.c::LZ4_decompress_safe_continue",
+      "lz4.c::LZ4_resetStreamDecode"
+     ]
+    },
+    {
+     "file_path": "lz4.h",
+     "methods": [
+      "lz4.h::LZ4_H_2983827168210",
+      "lz4.h::LZ4_EXPORT",
+      "lz4.h::LZ4_EXPORT",
+      "lz4.h::LZ4_EXPORT",
+      "lz4.h::LZ4_VERSION_MAJOR",
+      "lz4.h::LZ4_VERSION_MINOR",
+      "lz4.h::LZ4_VERSION_RELEASE",
+      "lz4.h::LZ4_VERSION_NUMBER",
+      "lz4.h::LZ4_decompress_safe",
+      "lz4.h::LZ4_streamDecode_t",
+      "lz4.h::LZ4_setStreamDecode",
+      "lz4.h::LZ4_decompress_safe_continue",
+      "lz4.h::LZ4_resetStreamDecode"
+     ]
+    }
+   ],
+   "component_id": "1",
+   "can_expand": false,
+   "components": [],
+   "components_relations": [],
+   "layer": "utility",
+   "symbol_count": 171,
+   "top_symbols": [
+    {
+     "n": "LZ4_H_2983827168210",
+     "k": "macro"
+    },
+    {
+     "n": "LZ4_EXPORT",
+     "k": "macro"
+    },
+    {
+     "n": "LZ4_EXPORT",
+     "k": "macro"
+    }
+   ],
+   "top_symbols_more": 95,
+   "hub": true
+  },
+  {
+   "name": "root: aes",
+   "description": "root: aes groups 2 files (c, h) around _AES_H_, CBC, ECB, CTR, AES256. tiny-AES-c (https://github.com/kokke/tiny-AES-c)",
+   "key_entities": [
+    {
+     "qualified_name": "aes.h::_AES_H_",
+     "reference_file": "aes.h",
+     "reference_start_line": 2,
+     "reference_end_line": 8
+    },
+    {
+     "qualified_name": "aes.h::CBC",
+     "reference_file": "aes.h",
+     "reference_start_line": 9,
+     "reference_end_line": 11
+    },
+    {
+     "qualified_name": "aes.h::ECB",
+     "reference_file": "aes.h",
+     "reference_start_line": 12,
+     "reference_end_line": 14
+    },
+    {
+     "qualified_name": "aes.h::CTR",
+     "reference_file": "aes.h",
+     "reference_start_line": 15,
+     "reference_end_line": 17
+    },
+    {
+     "qualified_name": "aes.h::AES256",
+     "reference_file": "aes.h",
+     "reference_start_line": 18,
+     "reference_end_line": 19
+    },
+    {
+     "qualified_name": "aes.h::AES_BLOCKLEN",
+     "reference_file": "aes.h",
+     "reference_start_line": 20,
+     "reference_end_line": 22
+    },
+    {
+     "qualified_name": "aes.h::AES_KEYLEN",
+     "reference_file": "aes.h",
+     "reference_start_line": 23,
+     "reference_end_line": 23
+    },
+    {
+     "qualified_name": "aes.h::AES_keyExpSize",
+     "reference_file": "aes.h",
+     "reference_start_line": 24,
+     "reference_end_line": 25
+    }
+   ],
+   "source_cluster_ids": [],
+   "file_methods": [
+    {
+     "file_path": "aes.c",
+     "methods": [
+      "aes.c::Nb",
+      "aes.c::KEYLEN_256",
+      "aes.c::RKLENGTH",
+      "aes.c::BLOCKLEN",
+      "aes.c::getSBoxValue",
+      "aes.c::getSBoxInvert",
+      "aes.c::Td0",
+      "aes.c::Td1",
+      "aes.c::Td2",
+      "aes.c::Td3",
+      "aes.c::Td4",
+      "aes.c::Nb",
+      "aes.c::Nk",
+      "aes.c::Nr",
+      "aes.c::Nk",
+      "aes.c::Nr",
+      "aes.c::Nk",
+      "aes.c::Nr",
+      "aes.c::MULTIPLY_AS_A_FUNCTION",
+      "aes.c::getSBoxValue",
+      "aes.c::KeyExpansion",
+      "aes.c::AES_init_ctx",
+      "aes.c::AES_init_ctx_iv",
+      "aes.c::AES_ctx_set_iv",
+      "aes.c::AddRoundKey",
+      "aes.c::SubBytes",
+      "aes.c::ShiftRows",
+      "aes.c::xtime",
+      "aes.c::MixColumns",
+      "aes.c::Multiply",
+      "aes.c::Multiply",
+      "aes.c::getSBoxInvert",
+      "aes.c::InvMixColumns",
+      "aes.c::InvSubBytes",
+      "aes.c::InvShiftRows",
+      "aes.c::Cipher",
+      "aes.c::InvCipher",
+      "aes.c::AES_ECB_encrypt",
+      "aes.c::AES_ECB_decrypt",
+      "aes.c::XorWithIv",
+      "aes.c::AES_CBC_encrypt_buffer",
+      "aes.c::AES_CBC_decrypt_buffer",
+      "aes.c::AES_CTR_xcrypt_buffer"
+     ]
+    },
+    {
+     "file_path": "aes.h",
+     "methods": [
+      "aes.h::_AES_H_",
+      "aes.h::CBC",
+      "aes.h::ECB",
+      "aes.h::CTR",
+      "aes.h::AES256",
+      "aes.h::AES_BLOCKLEN",
+      "aes.h::AES_KEYLEN",
+      "aes.h::AES_keyExpSize",
+      "aes.h::AES_KEYLEN",
+      "aes.h::AES_keyExpSize",
+      "aes.h::AES_KEYLEN",
+      "aes.h::AES_keyExpSize",
+      "aes.h::AES_ctx",
+      "aes.h::AES_init_ctx",
+      "aes.h::AES_init_ctx_iv",
+      "aes.h::AES_ctx_set_iv",
+      "aes.h::AES_ECB_encrypt",
+      "aes.h::AES_ECB_decrypt",
+      "aes.h::AES_CBC_encrypt_buffer",
+      "aes.h::AES_CBC_decrypt_buffer",
+      "aes.h::AES_CTR_xcrypt_buffer"
+     ]
+    }
+   ],
+   "component_id": "2",
+   "can_expand": false,
+   "components": [],
+   "components_relations": [],
+   "layer": "utility",
+   "symbol_count": 64,
+   "top_symbols": [
+    {
+     "n": "_AES_H_",
+     "k": "macro"
+    },
+    {
+     "n": "CBC",
+     "k": "macro"
+    },
+    {
+     "n": "ECB",
+     "k": "macro"
+    }
+   ],
+   "top_symbols_more": 41,
+   "hub": false
+  }
+ ],
+ "components_relations": []
+}

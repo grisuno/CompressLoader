@@ -1,0 +1,1789 @@
+{
+  "concepts": [
+    {
+      "name": "decode",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "lz4.c",
+        "lz4.h",
+        "lzss.c",
+        "test.c",
+        "unpack.c"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "aes",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 43,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "bit",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c",
+        "lz4.c",
+        "lzss.c"
+      ],
+      "mentions": 17,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "decrypt",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 16,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "get",
+      "files": [
+        "aes.c",
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 44,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "encrypt",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "lzss",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c",
+        "lzss.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "hook",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 54,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "command",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "data",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "line",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "read",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "crt",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "process",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "destruct",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "self",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "secure",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "warnings",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "argc",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "argv",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "bits",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cmdline",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "exit",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "fast",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c",
+        "lz4.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "getmainargs",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "iat",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "masquerade",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "ntheaders",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "pedirectory",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "reader",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "repair",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "wargv",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "wgetmainargs",
+      "files": [
+        "loader.c",
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "decompress",
+      "files": [
+        "loader5.c",
+        "loader6.c",
+        "lz4.c",
+        "lz4.h",
+        "test.c"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "key",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "trampoline",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "fluctuation",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "ntdll",
+      "files": [
+        "loader.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "sleep",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "lean",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "loader",
+      "files": [
+        "loader.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mean",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "set",
+      "files": [
+        "aes.c",
+        "aes.h",
+        "loader4.c",
+        "lz4.c",
+        "lz4.h"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "win32",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "address",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "buffers",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "hookexit",
+      "files": [
+        "loader.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "ifdef",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "return",
+      "files": [
+        "loader2.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "unhook",
+      "files": [
+        "loader.c",
+        "loader3.c",
+        "loader4.c",
+        "loader5.c",
+        "loader6.c"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "aes",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bit",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decompress",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decompress",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decompress",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decompress",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "fast",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h",
+        "lz4.c->lz4.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "get",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "key",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "aes.c->aes.h",
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "address",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "aes",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argc",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "argv",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "bits",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "buffers",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "cmdline",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "command",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "crt",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "data",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "decrypt",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "destruct",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decompress",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "encrypt",
+      "target": "decompress",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "exit",
+      "target": "decode",
+      "verb": "consumes",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    },
+    {
+      "source": "exit",
+      "target": "decode",
+      "verb": "depends_on",
+      "strength": 0.67,
+      "confidence": "INFERRED",
+      "evidence": [
+        "loader5.c->lz4.h",
+        "loader6.c->lz4.h"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `address` centralizes 5 files; Antithesis: `aes` pulls 8 files with 5 shared (Jaccard 0.62); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `argc` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `argv` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `bit` pulls 8 files with 5 shared (Jaccard 0.62); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `bits` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `buffers` pulls 5 files with 5 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `cmdline` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `command` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `crt` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `address` centralizes 5 files; Antithesis: `data` pulls 6 files with 5 shared (Jaccard 0.83); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
