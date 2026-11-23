@@ -3,7 +3,7 @@
     "community_a": 0,
     "community_b": 1,
     "connection_type": "shares_context",
-    "explanation": "Inferred shared context (language c and layer utility) with no import path between community 0 (root: loader5) and community 1 (root: aes).",
+    "explanation": "Inferred shared context (layer utility) with no import path between community 0 (root: loader5) and community 1 (root: aes).",
     "strength": 0.5,
     "confidence": "INFERRED"
   },
@@ -19,7 +19,7 @@
     "community_a": 1,
     "community_b": 2,
     "connection_type": "shares_context",
-    "explanation": "Inferred shared context (language c and layer utility) with no import path between community 1 (root: aes) and community 2 (orphans).",
+    "explanation": "Inferred shared context (layer utility) with no import path between community 1 (root: aes) and community 2 (orphans).",
     "strength": 0.5,
     "confidence": "INFERRED"
   }

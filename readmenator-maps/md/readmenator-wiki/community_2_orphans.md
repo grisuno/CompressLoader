@@ -63,7 +63,7 @@ This community groups 11 file(s) rooted at `root` with dominant language c (cohe
 ## Connections
 
 - [INFERRED] shares_context community 0 <-> 2 (strength 0.5): Inferred shared context (language c and layer utility) with no import path between community 0 (root: loader5) and community 2 (orphans).
-- [INFERRED] shares_context community 1 <-> 2 (strength 0.5): Inferred shared context (language c and layer utility) with no import path between community 1 (root: aes) and community 2 (orphans).
+- [INFERRED] shares_context community 1 <-> 2 (strength 0.5): Inferred shared context (layer utility) with no import path between community 1 (root: aes) and community 2 (orphans).
 
 ## Risks
 

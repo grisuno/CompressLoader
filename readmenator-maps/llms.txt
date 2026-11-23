@@ -7,7 +7,7 @@ Generated offline by readmenator (zero LLM tokens). Start with the wiki index fo
 ## Wiki
 
 - [readmenator-wiki/index.md](md/readmenator-wiki/index.md): The codebase centres on loader5.c, loader6.c, lz4.h. Architecturally it is 2 layers, dominant utility (16 files) across 3 import-based communities. Recorded...
-- [readmenator-wiki/REPORT.md](md/readmenator-wiki/REPORT.md): Project: CompressLoader | 2026-10-16 | offline, deterministic
+- [readmenator-wiki/REPORT.md](md/readmenator-wiki/REPORT.md): Project: CompressLoader | 2026-11-23 | offline, deterministic
 - [readmenator-wiki/community_0_root_loader5.md](md/readmenator-wiki/community_0_root_loader5.md): Community 0 | 4 files | cohesion 1.00
 - [readmenator-wiki/community_1_root_aes.md](md/readmenator-wiki/community_1_root_aes.md): Community 1 | 2 files | cohesion 1.00
 - [readmenator-wiki/community_2_orphans.md](md/readmenator-wiki/community_2_orphans.md): Community 2 | 11 files | cohesion 0.00
@@ -27,7 +27,7 @@ Generated offline by readmenator (zero LLM tokens). Start with the wiki index fo
 - [readmenator-agent/CONCEPTS.md](md/readmenator-agent/CONCEPTS.md): Nouns map atomically to file sets (EXTRACTED); verbs aggregate structural edges (INFERRED).
 - [readmenator-agent/KB_root.md](md/readmenator-agent/KB_root.md): Doc: tiny-AES-c (https://github.com/kokke/tiny-AES-c)
 - [readmenator-agent/KB_root_p2.md](md/readmenator-agent/KB_root_p2.md): LZ4streamDecodetinternal (struct, line 52)
-- [readmenator-agent/MEMORY.md](md/readmenator-agent/MEMORY.md): Generated from 17 files at commit 54dc72204474. Read this first, then readmenator-wiki/index.md, then readmenator . ask "<question>" for anything specific.
+- [readmenator-agent/MEMORY.md](md/readmenator-agent/MEMORY.md): Generated from 17 files at commit 243139a559a7. Read this first, then readmenator-wiki/index.md, then readmenator . ask "<question>" for anything specific.
 - [readmenator-agent/SECURITY.md](md/readmenator-agent/SECURITY.md)
 - [readmenator-agent/SYMBOLS.md](md/readmenator-agent/SYMBOLS.md)
 - [readmenator-agent/recipes/add-function.md](md/readmenator-agent/recipes/add-function.md): Find the target file by purpose: grep -in '<topic>' readmenator-agent/INDEX.md
